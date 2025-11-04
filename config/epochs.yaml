@@ -1,0 +1,43 @@
+# Epoki i parametry harvestingu (precyzyjne JD dla północy UTC)
+site: "500"           # geocentrycznie (kody Horizons)
+step: "1h"            # bazowy krok (godzinowy)
+chunk_days: 30        # max zakres jednego requestu do Horizons (dni)
+targets:              # domyślne cele (możesz nadpisać flagą CLI)
+  - Sun
+  - Moon
+  - Mercury
+  - Venus
+  - Mars
+  - Jupiter
+  - Saturn
+  - 1P/Halley
+  - 2P/Encke
+  - 55P/Tempel-Tuttle
+  - 109P/Swift-Tuttle
+  - C/1995 O1 (Hale-Bopp)
+
+epochs:
+  - name: PREHISTORIA
+    jd_start: 625332.5
+    jd_end: 1538802.5
+    status: COARSE
+  - name: ANTYK
+    jd_start: 1538803.5
+    jd_end: 1904045.5
+    status: WARN
+  - name: SREDNIOWIECZE
+    jd_start: 1904046.5
+    jd_end: 2268922.5
+    status: WARN
+  - name: NOWOZYTNOSC
+    jd_start: 2268923.5
+    jd_end: 2415019.5
+    status: PASS
+  - name: WIEK_XX
+    jd_start: 2415020.5
+    jd_end: 2451543.5
+    status: PASS
+  - name: WSPOLCZESNOSC
+    jd_start: 2451544.5
+    jd_end: 2460983.5
+    status: PASS

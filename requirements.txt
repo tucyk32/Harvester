@@ -1,0 +1,10 @@
+astroquery
+astropy
+pandas
+numpy
+pyarrow
+tenacity
+tqdm
+pyyaml
+duckdb
+matplotlib

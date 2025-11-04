@@ -1,0 +1,21 @@
+# py
+__pycache__/
+*.pyc
+*.pyo
+
+# data/cache/artifacts
+parquet/
+cache/
+reports/
+*.parquet
+*.arrow
+*.feather
+*.html
+*.png
+*.csv
+
+# env/ide
+.venv/
+.env
+.vscode/
+.idea/
