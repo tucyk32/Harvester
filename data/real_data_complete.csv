@@ -1,0 +1,442 @@
+title,abstract,authors,publication_date,source,url,year,type,data_source,journal,keyword,extract,topic,language
+Lecture Notes: Optimization for Machine Learning,"Lecture notes on optimization for machine learning, derived from a course at
+Princeton University and tutorials given in MLSS, Buenos Aires, as well as
+Simons Foundation, Berkeley.",Elad Hazan,2019-09-08,arXiv,http://arxiv.org/abs/1909.03550v1,2019.0,scientific_paper,arxiv,,,,,
+Machine Learning for Clinical Predictive Analytics,"In this chapter, we provide a brief overview of applying machine learning
+techniques for clinical prediction tasks. We begin with a quick introduction to
+the concepts of machine learning and outline some of the most common machine
+learning algorithms. Next, we demonstrate how to apply the algorithms with
+appropriate toolkits to conduct machine learning experiments for clinical
+prediction tasks. The objectives of this chapter are to (1) understand the
+basics of machine learning techniques and the reasons behind why they are
+useful for solving clinical prediction problems, (2) understand the intuition
+behind some machine learning models, including regression, decision trees, and
+support vector machines, and (3) understand how to apply these models to
+clinical prediction problems using publicly available datasets via case
+studies.",Wei-Hung Weng,2019-09-19,arXiv,http://arxiv.org/abs/1909.09246v1,2019.0,scientific_paper,arxiv,,,,,
+"Towards Modular Machine Learning Solution Development: Benefits and
+  Trade-offs","Machine learning technologies have demonstrated immense capabilities in
+various domains. They play a key role in the success of modern businesses.
+However, adoption of machine learning technologies has a lot of untouched
+potential. Cost of developing custom machine learning solutions that solve
+unique business problems is a major inhibitor to far-reaching adoption of
+machine learning technologies. We recognize that the monolithic nature
+prevalent in today's machine learning applications stands in the way of
+efficient and cost effective customized machine learning solution development.
+In this work we explore the benefits of modular machine learning solutions and
+discuss how modular machine learning solutions can overcome some of the major
+solution engineering limitations of monolithic machine learning solutions. We
+analyze the trade-offs between modular and monolithic machine learning
+solutions through three deep learning problems; one text based and the two
+image based. Our experimental results show that modular machine learning
+solutions have a promising potential to reap the solution engineering
+advantages of modularity while gaining performance and data advantages in a way
+the monolithic machine learning solutions do not permit.",Samiyuru Menik; Lakshmish Ramaswamy,2023-01-23,arXiv,http://arxiv.org/abs/2301.09753v1,2023.0,scientific_paper,arxiv,,,,,
+An Optimal Control View of Adversarial Machine Learning,"I describe an optimal control view of adversarial machine learning, where the
+dynamical system is the machine learner, the input are adversarial actions, and
+the control costs are defined by the adversary's goals to do harm and be hard
+to detect. This view encompasses many types of adversarial machine learning,
+including test-item attacks, training-data poisoning, and adversarial reward
+shaping. The view encourages adversarial machine learning researcher to utilize
+advances in control theory and reinforcement learning.",Xiaojin Zhu,2018-11-11,arXiv,http://arxiv.org/abs/1811.04422v1,2018.0,scientific_paper,arxiv,,,,,
+The Tribes of Machine Learning and the Realm of Computer Architecture,"Machine learning techniques have influenced the field of computer
+architecture like many other fields. This paper studies how the fundamental
+machine learning techniques can be applied towards computer architecture
+problems. We also provide a detailed survey of computer architecture research
+that employs different machine learning methods. Finally, we present some
+future opportunities and the outstanding challenges that need to be overcome to
+exploit full potential of machine learning for computer architecture.",Ayaz Akram; Jason Lowe-Power,2020-12-07,arXiv,http://arxiv.org/abs/2012.04105v1,2020.0,scientific_paper,arxiv,,,,,
+"A Machine Learning Tutorial for Operational Meteorology, Part I:
+  Traditional Machine Learning","Recently, the use of machine learning in meteorology has increased greatly.
+While many machine learning methods are not new, university classes on machine
+learning are largely unavailable to meteorology students and are not required
+to become a meteorologist. The lack of formal instruction has contributed to
+perception that machine learning methods are 'black boxes' and thus end-users
+are hesitant to apply the machine learning methods in their every day workflow.
+To reduce the opaqueness of machine learning methods and lower hesitancy
+towards machine learning in meteorology, this paper provides a survey of some
+of the most common machine learning methods. A familiar meteorological example
+is used to contextualize the machine learning methods while also discussing
+machine learning topics using plain language. The following machine learning
+methods are demonstrated: linear regression; logistic regression; decision
+trees; random forest; gradient boosted decision trees; naive Bayes; and support
+vector machines. Beyond discussing the different methods, the paper also
+contains discussions on the general machine learning process as well as best
+practices to enable readers to apply machine learning to their own datasets.
+Furthermore, all code (in the form of Jupyter notebooks and Google Colaboratory
+notebooks) used to make the examples in the paper is provided in an effort to
+catalyse the use of machine learning in meteorology.",Randy J. Chase; David R. Harrison; Amanda Burke; Gary M. Lackmann; Amy McGovern,2022-04-15,arXiv,http://arxiv.org/abs/2204.07492v2,2022.0,scientific_paper,arxiv,,,,,
+Data Pricing in Machine Learning Pipelines,"Machine learning is disruptive. At the same time, machine learning can only
+succeed by collaboration among many parties in multiple steps naturally as
+pipelines in an eco-system, such as collecting data for possible machine
+learning applications, collaboratively training models by multiple parties and
+delivering machine learning services to end users. Data is critical and
+penetrating in the whole machine learning pipelines. As machine learning
+pipelines involve many parties and, in order to be successful, have to form a
+constructive and dynamic eco-system, marketplaces and data pricing are
+fundamental in connecting and facilitating those many parties. In this article,
+we survey the principles and the latest research development of data pricing in
+machine learning pipelines. We start with a brief review of data marketplaces
+and pricing desiderata. Then, we focus on pricing in three important steps in
+machine learning pipelines. To understand pricing in the step of training data
+collection, we review pricing raw data sets and data labels. We also
+investigate pricing in the step of collaborative training of machine learning
+models, and overview pricing machine learning models for end users in the step
+of machine learning deployment. We also discuss a series of possible future
+directions.",Zicun Cong; Xuan Luo; Pei Jian; Feida Zhu; Yong Zhang,2021-08-18,arXiv,http://arxiv.org/abs/2108.07915v1,2021.0,scientific_paper,arxiv,,,,,
+"MLBench: How Good Are Machine Learning Clouds for Binary Classification
+  Tasks on Structured Data?","We conduct an empirical study of machine learning functionalities provided by
+major cloud service providers, which we call machine learning clouds. Machine
+learning clouds hold the promise of hiding all the sophistication of running
+large-scale machine learning: Instead of specifying how to run a machine
+learning task, users only specify what machine learning task to run and the
+cloud figures out the rest. Raising the level of abstraction, however, rarely
+comes free - a performance penalty is possible. How good, then, are current
+machine learning clouds on real-world machine learning workloads?
+  We study this question with a focus on binary classication problems. We
+present mlbench, a novel benchmark constructed by harvesting datasets from
+Kaggle competitions. We then compare the performance of the top winning code
+available from Kaggle with that of running machine learning clouds from both
+Azure and Amazon on mlbench. Our comparative study reveals the strength and
+weakness of existing machine learning clouds and points out potential future
+directions for improvement.",Yu Liu; Hantian Zhang; Luyuan Zeng; Wentao Wu; Ce Zhang,2017-07-29,arXiv,http://arxiv.org/abs/1707.09562v3,2017.0,scientific_paper,arxiv,,,,,
+Understanding Bias in Machine Learning,"Bias is known to be an impediment to fair decisions in many domains such as
+human resources, the public sector, health care etc. Recently, hope has been
+expressed that the use of machine learning methods for taking such decisions
+would diminish or even resolve the problem. At the same time, machine learning
+experts warn that machine learning models can be biased as well. In this
+article, our goal is to explain the issue of bias in machine learning from a
+technical perspective and to illustrate the impact that biased data can have on
+a machine learning model. To reach such a goal, we develop interactive plots to
+visualizing the bias learned from synthetic data.",Jindong Gu; Daniela Oelke,2019-09-02,arXiv,http://arxiv.org/abs/1909.01866v1,2019.0,scientific_paper,arxiv,,,,,
+Introduction to Machine Learning: Class Notes 67577,"Introduction to Machine learning covering Statistical Inference (Bayes, EM,
+ML/MaxEnt duality), algebraic and spectral methods (PCA, LDA, CCA, Clustering),
+and PAC learning (the Formal model, VC dimension, Double Sampling theorem).",Amnon Shashua,2009-04-23,arXiv,http://arxiv.org/abs/0904.3664v1,2009.0,scientific_paper,arxiv,,,,,
+The Governance of Physical Artificial Intelligence,"Physical artificial intelligence can prove to be one of the most important
+challenges of the artificial intelligence. The governance of physical
+artificial intelligence would define its responsible intelligent application in
+the society.",Yingbo Li; Anamaria-Beatrice Spulber; Yucong Duan,2023-04-06,arXiv,http://arxiv.org/abs/2304.02924v1,2023.0,scientific_paper,arxiv,,,,,
+"Does an artificial intelligence perform market manipulation with its own
+  discretion? -- A genetic algorithm learns in an artificial market simulation","Who should be charged with responsibility for an artificial intelligence
+performing market manipulation have been discussed. In this study, I
+constructed an artificial intelligence using a genetic algorithm that learns in
+an artificial market simulation, and investigated whether the artificial
+intelligence discovers market manipulation through learning with an artificial
+market simulation despite a builder of artificial intelligence has no intention
+of market manipulation. As a result, the artificial intelligence discovered
+market manipulation as an optimal investment strategy. This result suggests
+necessity of regulation, such as obligating builders of artificial intelligence
+to prevent artificial intelligence from performing market manipulation.",Takanobu Mizuta,2020-05-21,arXiv,http://arxiv.org/abs/2005.10488v1,2020.0,scientific_paper,arxiv,,,,,
+Impact of Artificial Intelligence on Economic Theory,"Artificial intelligence has impacted many aspects of human life. This paper
+studies the impact of artificial intelligence on economic theory. In particular
+we study the impact of artificial intelligence on the theory of bounded
+rationality, efficient market hypothesis and prospect theory.",Tshilidzi Marwala,2015-07-01,arXiv,http://arxiv.org/abs/1509.01213v1,2015.0,scientific_paper,arxiv,,,,,
+"Proceedings of the Thirteenth Conference on Uncertainty in Artificial
+  Intelligence (1997)","This is the Proceedings of the Thirteenth Conference on Uncertainty in
+Artificial Intelligence, which was held in Providence, RI, August 1-3, 1997",Dan Geiger; Prakash Shenoy,2013-04-13,arXiv,http://arxiv.org/abs/1304.3846v1,2013.0,scientific_paper,arxiv,,,,,
+"Proceedings of the Ninth Conference on Uncertainty in Artificial
+  Intelligence (1993)","This is the Proceedings of the Ninth Conference on Uncertainty in Artificial
+Intelligence, which was held in Washington, DC, July 9-11, 1993",David Heckerman; E. Mamdani,2013-04-13,arXiv,http://arxiv.org/abs/1304.3851v1,2013.0,scientific_paper,arxiv,,,,,
+"Proceedings of the Second Conference on Uncertainty in Artificial
+  Intelligence (1986)","This is the Proceedings of the Second Conference on Uncertainty in Artificial
+Intelligence, which was held in Philadelphia, PA, August 8-10, 1986",Laveen Kanal; John Lemmer,2013-04-13,arXiv,http://arxiv.org/abs/1304.3859v1,2013.0,scientific_paper,arxiv,,,,,
+Artificial Intelligence in Humans,"In this paper, I put forward that in many instances, thinking mechanisms are
+equivalent to artificial intelligence modules programmed into the human mind.",Michael Swan Laufer,2013-10-30,arXiv,http://arxiv.org/abs/1311.0716v1,2013.0,scientific_paper,arxiv,,,,,
+"AAAI FSS-18: Artificial Intelligence in Government and Public Sector
+  Proceedings","Proceedings of the AAAI Fall Symposium on Artificial Intelligence in
+Government and Public Sector, Arlington, Virginia, USA, October 18-20, 2018",Frank Stein; Alun Preece; Mihai Boicu,2018-10-14,arXiv,http://arxiv.org/abs/1810.06018v1,2018.0,scientific_paper,arxiv,,,,,
+Comprehensible Artificial Intelligence on Knowledge Graphs: A survey,"Artificial Intelligence applications gradually move outside the safe walls of
+research labs and invade our daily lives. This is also true for Machine
+Learning methods on Knowledge Graphs, which has led to a steady increase in
+their application since the beginning of the 21st century. However, in many
+applications, users require an explanation of the Artificial Intelligences
+decision. This led to increased demand for Comprehensible Artificial
+Intelligence. Knowledge Graphs epitomize fertile soil for Comprehensible
+Artificial Intelligence, due to their ability to display connected data, i.e.
+knowledge, in a human- as well as machine-readable way. This survey gives a
+short history to Comprehensible Artificial Intelligence on Knowledge Graphs.
+Furthermore, we contribute by arguing that the concept Explainable Artificial
+Intelligence is overloaded and overlapping with Interpretable Machine Learning.
+By introducing the parent concept Comprehensible Artificial Intelligence, we
+provide a clear-cut distinction of both concepts while accounting for their
+similarities. Thus, we provide in this survey a case for Comprehensible
+Artificial Intelligence on Knowledge Graphs consisting of Interpretable Machine
+Learning on Knowledge Graphs and Explainable Artificial Intelligence on
+Knowledge Graphs. This leads to the introduction of a novel taxonomy for
+Comprehensible Artificial Intelligence on Knowledge Graphs. In addition, a
+comprehensive overview of the research on Comprehensible Artificial
+Intelligence on Knowledge Graphs is presented and put into the context of the
+taxonomy. Finally, research gaps in the field of Comprehensible Artificial
+Intelligence on Knowledge Graphs are identified for future research.",Simon Schramm; Christoph Wehner; Ute Schmid,2024-04-04,arXiv,http://arxiv.org/abs/2404.03499v1,2024.0,scientific_paper,arxiv,,,,,
+"Artificial Intelligence Technology analysis using Artificial
+  Intelligence patent through Deep Learning model and vector space model","Thanks to rapid development of artificial intelligence technology in recent
+years, the current artificial intelligence technology is contributing to many
+part of society. Education, environment, medical care, military, tourism,
+economy, politics, etc. are having a very large impact on society as a whole.
+For example, in the field of education, there is an artificial intelligence
+tutoring system that automatically assigns tutors based on student's level. In
+the field of economics, there are quantitative investment methods that
+automatically analyze large amounts of data to find investment laws to create
+investment models or predict changes in financial markets. As such, artificial
+intelligence technology is being used in various fields. So, it is very
+important to know exactly what factors have an important influence on each
+field of artificial intelligence technology and how the relationship between
+each field is connected. Therefore, it is necessary to analyze artificial
+intelligence technology in each field. In this paper, we analyze patent
+documents related to artificial intelligence technology. We propose a method
+for keyword analysis within factors using artificial intelligence patent data
+sets for artificial intelligence technology analysis. This is a model that
+relies on feature engineering based on deep learning model named KeyBERT, and
+using vector space model. A case study of collecting and analyzing artificial
+intelligence patent data was conducted to show how the proposed model can be
+applied to real world problems.",Yongmin Yoo; Dongjin Lim; Kyungsun Kim,2021-11-08,arXiv,http://arxiv.org/abs/2111.11295v1,2021.0,scientific_paper,arxiv,,,,,
+Second Croatian Computer Vision Workshop (CCVW 2013),"Proceedings of the Second Croatian Computer Vision Workshop (CCVW 2013,
+http://www.fer.unizg.hr/crv/ccvw2013) held September 19, 2013, in Zagreb,
+Croatia. Workshop was organized by the Center of Excellence for Computer Vision
+of the University of Zagreb.",Sven Lončarić; Siniša Šegvić,2013-10-01,arXiv,http://arxiv.org/abs/1310.0319v3,2013.0,scientific_paper,arxiv,,,,,
+"Implications of Computer Vision Driven Assistive Technologies Towards
+  Individuals with Visual Impairment","Computer vision based technology is becoming ubiquitous in society. One
+application area that has seen an increase in computer vision is assistive
+technologies, specifically for those with visual impairment. Research has shown
+the ability of computer vision models to achieve tasks such provide scene
+captions, detect objects and recognize faces. Although assisting individuals
+with visual impairment with these tasks increases their independence and
+autonomy, concerns over bias, privacy and potential usefulness arise. This
+paper addresses the positive and negative implications computer vision based
+assistive technologies have on individuals with visual impairment, as well as
+considerations for computer vision researchers and developers in order to
+mitigate the amount of negative implications.",Linda Wang; Alexander Wong,2019-05-20,arXiv,http://arxiv.org/abs/1905.07844v1,2019.0,scientific_paper,arxiv,,,,,
+"Are object detection assessment criteria ready for maritime computer
+  vision?","Maritime vessels equipped with visible and infrared cameras can complement
+other conventional sensors for object detection. However, application of
+computer vision techniques in maritime domain received attention only recently.
+The maritime environment offers its own unique requirements and challenges.
+Assessment of the quality of detections is a fundamental need in computer
+vision. However, the conventional assessment metrics suitable for usual object
+detection are deficient in the maritime setting. Thus, a large body of related
+work in computer vision appears inapplicable to the maritime setting at the
+first sight. We discuss the problem of defining assessment metrics suitable for
+maritime computer vision. We consider new bottom edge proximity metrics as
+assessment metrics for maritime computer vision. These metrics indicate that
+existing computer vision approaches are indeed promising for maritime computer
+vision and can play a foundational role in the emerging field of maritime
+computer vision.",Dilip K. Prasad; Huixu Dong; Deepu Rajan; Chai Quek,2018-09-12,arXiv,http://arxiv.org/abs/1809.04659v2,2018.0,scientific_paper,arxiv,,,,,
+Enhancing camera surveillance using computer vision: a research note,"$\mathbf{Purpose}$ - The growth of police operated surveillance cameras has
+out-paced the ability of humans to monitor them effectively. Computer vision is
+a possible solution. An ongoing research project on the application of computer
+vision within a municipal police department is described. The paper aims to
+discuss these issues.
+  $\mathbf{Design/methodology/approach}$ - Following the demystification of
+computer vision technology, its potential for police agencies is developed
+within a focus on computer vision as a solution for two common surveillance
+camera tasks (live monitoring of multiple surveillance cameras and summarizing
+archived video files). Three unaddressed research questions (can specialized
+computer vision applications for law enforcement be developed at this time, how
+will computer vision be utilized within existing public safety camera
+monitoring rooms, and what are the system-wide impacts of a computer vision
+capability on local criminal justice systems) are considered.
+  $\mathbf{Findings}$ - Despite computer vision becoming accessible to law
+enforcement agencies the impact of computer vision has not been discussed or
+adequately researched. There is little knowledge of computer vision or its
+potential in the field.
+  $\mathbf{Originality/value}$ - This paper introduces and discusses computer
+vision from a law enforcement perspective and will be valuable to police
+personnel tasked with monitoring large camera networks and considering computer
+vision as a system upgrade.",Haroon Idrees; Mubarak Shah; Ray Surette,2018-08-12,arXiv,http://arxiv.org/abs/1808.03998v1,2018.0,scientific_paper,arxiv,,,,,
+Adapting Computer Vision Algorithms for Omnidirectional Video,"Omnidirectional (360{\deg}) video has got quite popular because it provides a
+highly immersive viewing experience. For computer vision algorithms, it poses
+several challenges, like the special (equirectangular) projection commonly
+employed and the huge image size. In this work, we give a high-level overview
+of these challenges and outline strategies how to adapt computer vision
+algorithm for the specifics of omnidirectional video.",Hannes Fassold,2019-07-22,arXiv,http://arxiv.org/abs/1907.09233v1,2019.0,scientific_paper,arxiv,,,,,
+Deep Learning vs. Traditional Computer Vision,"Deep Learning has pushed the limits of what was possible in the domain of
+Digital Image Processing. However, that is not to say that the traditional
+computer vision techniques which had been undergoing progressive development in
+years prior to the rise of DL have become obsolete. This paper will analyse the
+benefits and drawbacks of each approach. The aim of this paper is to promote a
+discussion on whether knowledge of classical computer vision techniques should
+be maintained. The paper will also explore how the two sides of computer vision
+can be combined. Several recent hybrid methodologies are reviewed which have
+demonstrated the ability to improve computer vision performance and to tackle
+problems not suited to Deep Learning. For example, combining traditional
+computer vision techniques with Deep Learning has been popular in emerging
+domains such as Panoramic Vision and 3D vision for which Deep Learning models
+have not yet been fully optimised",Niall O' Mahony; Sean Campbell; Anderson Carvalho; Suman Harapanahalli; Gustavo Velasco-Hernandez; Lenka Krpalkova; Daniel Riordan; Joseph Walsh,2019-10-30,arXiv,http://arxiv.org/abs/1910.13796v1,2019.0,scientific_paper,arxiv,,,,,
+"Multiband NFC for High-Throughput Wireless Computer Vision Sensor
+  Network","Vision sensors lie in the heart of computer vision. In many computer vision
+applications, such as AR/VR, non-contacting near-field communication (NFC) with
+high throughput is required to transfer information to algorithms. In this
+work, we proposed a novel NFC system which utilizes multiple frequency bands to
+achieve high throughput.",F. Li; J. Du,2017-05-28,arXiv,http://arxiv.org/abs/1707.03720v1,2017.0,scientific_paper,arxiv,,,,,
+"Computer Vision and Abnormal Patient Gait Assessment a Comparison of
+  Machine Learning Models","Abnormal gait, its associated falls and complications have high patient
+morbidity, mortality. Computer vision detects, predicts patient gait
+abnormalities, assesses fall risk and serves as clinical decision support tool
+for physicians. This paper performs a systematic review of how computer vision,
+machine learning models perform an abnormal patient's gait assessment. Computer
+vision is beneficial in gait analysis, it helps capture the patient posture.
+Several literature suggests the use of different machine learning algorithms
+such as SVM, ANN, K-Star, Random Forest, KNN, among others to perform the
+classification on the features extracted to study patient gait abnormalities.",Jasmin Hundall; Benson A. Babu,2020-03-22,arXiv,http://arxiv.org/abs/2004.02810v1,2020.0,scientific_paper,arxiv,,,,,
+Ethics and Creativity in Computer Vision,"This paper offers a retrospective of what we learnt from organizing the
+workshop *Ethical Considerations in Creative applications of Computer Vision*
+at CVPR 2021 conference and, prior to that, a series of workshops on *Computer
+Vision for Fashion, Art and Design* at ECCV 2018, ICCV 2019, and CVPR 2020. We
+hope this reflection will bring artists and machine learning researchers into
+conversation around the ethical and social dimensions of creative applications
+of computer vision.",Negar Rostamzadeh; Emily Denton; Linda Petrini,2021-12-06,arXiv,http://arxiv.org/abs/2112.03111v1,2021.0,scientific_paper,arxiv,,,,,
+Tuning computer vision models with task rewards,"Misalignment between model predictions and intended usage can be detrimental
+for the deployment of computer vision models. The issue is exacerbated when the
+task involves complex structured outputs, as it becomes harder to design
+procedures which address this misalignment. In natural language processing,
+this is often addressed using reinforcement learning techniques that align
+models with a task reward. We adopt this approach and show its surprising
+effectiveness across multiple computer vision tasks, such as object detection,
+panoptic segmentation, colorization and image captioning. We believe this
+approach has the potential to be widely useful for better aligning models with
+a diverse range of computer vision tasks.",André Susano Pinto; Alexander Kolesnikov; Yuge Shi; Lucas Beyer; Xiaohua Zhai,2023-02-16,arXiv,http://arxiv.org/abs/2302.08242v1,2023.0,scientific_paper,arxiv,,,,,
+Natural Language Processing using Hadoop and KOSHIK,"Natural language processing, as a data analytics related technology, is used
+widely in many research areas such as artificial intelligence, human language
+processing, and translation. At present, due to explosive growth of data, there
+are many challenges for natural language processing. Hadoop is one of the
+platforms that can process the large amount of data required for natural
+language processing. KOSHIK is one of the natural language processing
+architectures, and utilizes Hadoop and contains language processing components
+such as Stanford CoreNLP and OpenNLP. This study describes how to build a
+KOSHIK platform with the relevant tools, and provides the steps to analyze wiki
+data. Finally, it evaluates and discusses the advantages and disadvantages of
+the KOSHIK architecture, and gives recommendations on improving the processing
+performance.",Emre Erturk; Hong Shi,2016-08-15,arXiv,http://arxiv.org/abs/1608.04434v1,2016.0,scientific_paper,arxiv,,,,,
+"Integrating AI Planning with Natural Language Processing: A Combination
+  of Explicit and Tacit Knowledge","Natural language processing (NLP) aims at investigating the interactions
+between agents and humans, processing and analyzing large amounts of natural
+language data. Large-scale language models play an important role in current
+natural language processing. However, the challenges of explainability and
+complexity come along with the developments of language models. One way is to
+introduce logical relations and rules into natural language processing models,
+such as making use of Automated Planning. Automated planning (AI planning)
+focuses on building symbolic domain models and synthesizing plans to transit
+initial states to goals based on domain models. Recently, there have been
+plenty of works related to these two fields, which have the abilities to
+generate explicit knowledge, e.g., preconditions and effects of action models,
+and learn from tacit knowledge, e.g., neural models, respectively. Integrating
+AI planning and natural language processing effectively improves the
+communication between human and intelligent agents. This paper outlines the
+commons and relations between AI planning and natural language processing,
+argues that each of them can effectively impact on the other one by five areas:
+(1) planning-based text understanding, (2) planning-based natural language
+processing, (3) planning-based explainability, (4) text-based human-robot
+interaction, and (5) applications. We also explore some potential future issues
+between AI planning and natural language processing. To the best of our
+knowledge, this survey is the first work that addresses the deep connections
+between AI planning and Natural language processing.",Kebing Jin; Hankz Hankui Zhuo,2022-02-15,arXiv,http://arxiv.org/abs/2202.07138v2,2022.0,scientific_paper,arxiv,,,,,
+Simple Natural Language Processing Tools for Danish,"This technical note describes a set of baseline tools for automatic
+processing of Danish text. The tools are machine-learning based, using natural
+language processing models trained over previously annotated documents. They
+are maintained at ITU Copenhagen and will always be freely available.",Leon Derczynski,2019-06-27,arXiv,http://arxiv.org/abs/1906.11608v2,2019.0,scientific_paper,arxiv,,,,,
+Using the DIFF Command for Natural Language Processing,"Diff is a software program that detects differences between two data sets and
+is useful in natural language processing. This paper shows several examples of
+the application of diff. They include the detection of differences between two
+different datasets, extraction of rewriting rules, merging of two different
+datasets, and the optimal matching of two different data sets. Since diff comes
+with any standard UNIX system, it is readily available and very easy to use.
+Our studies showed that diff is a practical tool for research into natural
+language processing.",Masaki Murata; Hitoshi Isahara,2002-08-13,arXiv,http://arxiv.org/abs/cs/0208020v1,2002.0,scientific_paper,arxiv,,,,,
+"Gap Analysis of Natural Language Processing Systems with respect to
+  Linguistic Modality","Modality is one of the important components of grammar in linguistics. It
+lets speaker to express attitude towards, or give assessment or potentiality of
+state of affairs. It implies different senses and thus has different
+perceptions as per the context. This paper presents an account showing the gap
+in the functionality of the current state of art Natural Language Processing
+(NLP) systems. The contextual nature of linguistic modality is studied. In this
+paper, the works and logical approaches employed by Natural Language Processing
+systems dealing with modality are reviewed. It sees human cognition and
+intelligence as multi-layered approach that can be implemented by intelligent
+systems for learning. Lastly, current flow of research going on within this
+field is talked providing futurology.",Vishal Shukla,2015-04-18,arXiv,http://arxiv.org/abs/1504.04716v1,2015.0,scientific_paper,arxiv,,,,,
+Towards the Study of Morphological Processing of the Tangkhul Language,"There is no or little work on natural language processing of Tangkhul
+language. The current work is a humble beginning of morphological processing of
+this language using an unsupervised approach. We use a small corpus collected
+from different sources of text books, short stories and articles of other
+topics. Based on the experiments carried out, the morpheme identification task
+using morphessor gives reasonable and interesting output despite using a small
+corpus.",Mirinso Shadang; Navanath Saharia; Thoudam Doren Singh,2020-06-29,arXiv,http://arxiv.org/abs/2006.16212v1,2020.0,scientific_paper,arxiv,,,,,
+Indian Legal NLP Benchmarks : A Survey,"Availability of challenging benchmarks is the key to advancement of AI in a
+specific field.Since Legal Text is significantly different than normal English
+text, there is a need to create separate Natural Language Processing benchmarks
+for Indian Legal Text which are challenging and focus on tasks specific to
+Legal Systems. This will spur innovation in applications of Natural language
+Processing for Indian Legal Text and will benefit AI community and Legal
+fraternity. We review the existing work in this area and propose ideas to
+create new benchmarks for Indian Legal Natural Language Processing.",Prathamesh Kalamkar; Janani Venugopalan Ph. D.; Vivek Raghavan Ph. D,2021-07-13,arXiv,http://arxiv.org/abs/2107.06056v1,2021.0,scientific_paper,arxiv,,,,,
+"Understanding scholarly Natural Language Processing system diagrams
+  through application of the Richards-Engelhardt framework","We utilise Richards-Engelhardt framework as a tool for understanding Natural
+Language Processing systems diagrams. Through four examples from scholarly
+proceedings, we find that the application of the framework to this ecological
+and complex domain is effective for reflecting on these diagrams. We argue for
+vocabulary to describe multiple-codings, semiotic variability, and
+inconsistency or misuse of visual encoding principles in diagrams. Further, for
+application to scholarly Natural Language Processing systems, and perhaps
+systems diagrams more broadly, we propose the addition of ""Grouping by Object""
+as a new visual encoding principle, and ""Emphasising"" as a new visual encoding
+type.",Guy Clarke Marshall; Caroline Jay; André Freitas,2020-08-26,arXiv,http://arxiv.org/abs/2008.11785v1,2020.0,scientific_paper,arxiv,,,,,
+Categorical Tools for Natural Language Processing,"This thesis develops the translation between category theory and
+computational linguistics as a foundation for natural language processing. The
+three chapters deal with syntax, semantics and pragmatics. First, string
+diagrams provide a unified model of syntactic structures in formal grammars.
+Second, functors compute semantics by turning diagrams into logical, tensor,
+neural or quantum computation. Third, the resulting functorial models can be
+composed to form games where equilibria are the solutions of language
+processing tasks. This framework is implemented as part of DisCoPy, the Python
+library for computing with string diagrams. We describe the correspondence
+between categorical, linguistic and computational structures, and demonstrate
+their applications in compositional natural language processing.",Giovanni de Felice,2022-12-13,arXiv,http://arxiv.org/abs/2212.06636v1,2022.0,scientific_paper,arxiv,,,,,
+Natural Language Processing for Financial Regulation,"This article provides an understanding of Natural Language Processing
+techniques in the framework of financial regulation, more specifically in order
+to perform semantic matching search between rules and policy when no dataset is
+available for supervised learning. We outline how to outperform simple
+pre-trained sentences-transformer models using freely available resources and
+explain the mathematical concepts behind the key building blocks of Natural
+Language Processing.",Ixandra Achitouv; Dragos Gorduza; Antoine Jacquier,2023-11-14,arXiv,http://arxiv.org/abs/2311.08533v1,2023.0,scientific_paper,arxiv,,,,,
+Z-DNA interaction proteins - insights from ChIP-seq data.,"Z-DNA is a noncanonical left-handed DNA conformation implicated in gene regulation and genome dynamics. Despite its biological relevance, the landscape of Z-DNA-binding proteins (ZBPs) in the human genome remains poorly characterized. In this study, we used the Z-Hunter algorithm to predict Z-DNA-forming sequences throughout the human genome. These predicted regions were then systematically overlaid with transcription factor (TF) binding profiles from the ChIP-Atlas database to identify proteins",Michaela Dobrovolná; Václav Brázda,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Biochemical and biophysical research communications,bioinformatics,,,
+"Dual Biological Potential: Anticancer and Antibacterial Activities of Bis-α, ω-Bifunctional Sphingolipids from the Marine Sponge Oceanapia ramsayi.","Marine sponges of the genus Oceanapia are prolific producers of bioactive secondary metabolites. Four known bifunctional sphingolipids are isolated: isorhizochalin (1), rhizochalin (2), rhizochalin C (3), and oceanapiside (4) from Oceanapia ramsayi sponges. These compounds are derivatized to form aglycones (1b-4b), perbenzoates (1c-4c), and bis-oxazoline (2e). The compounds and their derivatives are investigated for their cytotoxicity against three breast cancer cell lines (HCC70, MDA-MB-231, MC",Dele Abdissa Keneni; Idris Njanje; Jarmo-Charles Julian Kalinski; Michelle Isaacs; Tarryn Swart; Candace Davison; Jo-Anne de la Mare; Rosemary Ann Dorrington,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,ChemMedChem,bioinformatics,,,
+miRScore: A rapid and precise microRNA validation tool.,"MicroRNAs (miRNAs) are small non-protein-coding RNAs that regulate gene expression in many eukaryotes. Next-generation sequencing of small RNAs (small RNA-seq) is central to the discovery and annotation of miRNAs. Newly annotated miRNAs and their longer precursors encoded by MIRNA loci are typically submitted to databases such as the miRBase microRNA registry following the publication of a peer-reviewed study. However, genome-wide scans using small RNA-seq data often yield high rates of false-po",Allison Vanek; Sam Griffiths-Jones; Blake C Meyers; Saima Shahid; Michael J Axtell,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,PLoS computational biology,bioinformatics,,,
+Global genomic survey of ,Antimicrobial resistance (AMR) in ,Kaifeng Chen; Junhao Peng; Zhong Peng; Renhang Xiao; Nanwei Wang; Yuhui Deng; Canji Wu; Zexin Zheng; Jin Guan; Yixin Tang; Qijie Lin; Chenggang Xu; Xuebin Xu; Ming Liao; Jianmin Zhang,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Emerging microbes & infections,bioinformatics,,,
+Glycosylated cannabinoids meet computational enzyme design.,,Joseph M Jez,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,bioinformatics,,,
+The RANK/RANKL axis controls vascular dynamics in the bone marrow.,"Receptor activator of nuclear factor kappa B ligand (RANKL) is an essential cytokine that induces osteoclastic differentiation by monocyte-macrophage lineage precursors. Here, we showed that in addition to its conventional action, RANKL controls vascular permeability in the bone marrow, where it facilitates the mobilization of hematopoietic monocytic cells, including osteoclast precursors, and resultantly regulates bone metabolism. RANK, a cognate receptor for RANKL, is abundantly expressed in s",Takeshi Kaneko; Shinya Yari; Junichi Kikuta; Yoshiki Omatsu; Shigeto Seno; Sumire Kikuchi; Kazuma Sato; Kentaro Fujii; Takao Sudo; Tetsuo Hasegawa; Kunimaro Furuta; Qianqian Guo; Samar H Ibrahim; Kosuke Muraoka; Yoshiaki Okada; Yoshiaki Kubota; Daisuke Okuzaki; Yasuhiro Kobayashi; Atsushi Kumanogoh; Nobuyuki Udagawa; Takashi Nagasawa; Josef M Penninger; Masaru Ishii,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,bioinformatics,,,
+miRScore: A rapid and precise microRNA validation tool.,"MicroRNAs (miRNAs) are small non-protein-coding RNAs that regulate gene expression in many eukaryotes. Next-generation sequencing of small RNAs (small RNA-seq) is central to the discovery and annotation of miRNAs. Newly annotated miRNAs and their longer precursors encoded by MIRNA loci are typically submitted to databases such as the miRBase microRNA registry following the publication of a peer-reviewed study. However, genome-wide scans using small RNA-seq data often yield high rates of false-po",Allison Vanek; Sam Griffiths-Jones; Blake C Meyers; Saima Shahid; Michael J Axtell,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,PLoS computational biology,computational biology,,,
+Global genomic survey of ,Antimicrobial resistance (AMR) in ,Kaifeng Chen; Junhao Peng; Zhong Peng; Renhang Xiao; Nanwei Wang; Yuhui Deng; Canji Wu; Zexin Zheng; Jin Guan; Yixin Tang; Qijie Lin; Chenggang Xu; Xuebin Xu; Ming Liao; Jianmin Zhang,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Emerging microbes & infections,computational biology,,,
+Glycosylated cannabinoids meet computational enzyme design.,,Joseph M Jez,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,computational biology,,,
+From sequence to scaffold: Computational design of protein nanoparticle vaccines from AlphaFold2-predicted building blocks.,"Self-assembling protein nanoparticles are being increasingly utilized in the design of next-generation vaccines due to their ability to induce antibody responses of superior magnitude, breadth, and durability. Computational protein design offers a route to nanoparticle scaffolds with structural and biochemical features tailored to specific vaccine applications. Although strategies for designing self-assembling proteins have been established, the recent development of powerful machine learning (M",Cyrus M Haas; Naveen Jasti; Annie Dosey; Joel D Allen; Rebecca Gillespie; Jackson McGowan; Elizabeth M Leaf; Max Crispin; Cole A DeForest; Masaru Kanekiyo; Neil P King,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,computational biology,,,
+Toward a ToxAtlas of Carbon-Based Nanomaterials: Single-Cell RNA Sequencing Reveals Initiating Cell Circuits in Pulmonary Inflammation.,"Understanding how nanomaterial properties drive acute lung inflammation is critical for the development of safer materials, but for low solubility carbon-based nanomaterials (CBNs) the initiation of the inflammatory response is still poorly understood. Leveraging single-cell RNA sequencing of mouse lungs, 12 h after intratracheally instillation with different CBN spherical carbon nanoparticles (CNP), tangled double-walled (DWCNT), and rigid multiwalled carbon nanotubes (MWCNT) and lipopolysaccha",Carola Voss; Lianyong Han; Meshal Ansari; Maximilian Strunz; Verena Haefner; Ilias Angelidis; Christoph H Mayr; Trine Berthing; Qiaoxia Zhou; Eva M Guenther; Osama Huzain; Otmar Schmid; Ulla Vogel; Janine Gote-Schniering; Svenja Gaedcke; Fabian J Theis; Herbert B Schiller; Tobias Stoeger,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,ACS nano,computational biology,,,
+RNACOREX - RNA coregulatory network explorer and classifier.,"Micro-RNAs (miRNA) and their relationship with messenger RNAs (mRNA) have been widely associated with disease development and progression. Post-transcriptional coregulatory networks are sets of miRNA-mRNA interactions that regulate specific genetic behaviors through their combined activity. However, identifying reliable sets of such interactions associated with specific diseases remains challenging, partly due to the high rate of false positives and the lack of user-friendly tools developed for ",Aitor Oviedo-Madrid; José González-Gomariz; Ruben Armañanzas,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,PLoS computational biology,computational biology,,,
+Quality Assessment of Large Language Model-Generated Medical Dialogue for Clinical Vignettes: Evaluation Study.,"Traditional clinical vignettes, though widely used in medical education, often focus on prototypical presentations; require substantial time and effort to develop; and fail to represent patient diversity, the complexity of clinical conditions, patients' perspectives, and the dynamic nature of physician-patient interactions.",Yasutaka Yanagita; Daiki Yokokawa; Shiichi Ihara; Ryo Yoshida; Yoshihide Okano; Takanori Uehara,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,JMIR formative research,medical AI,,,
+"Switching the strict substrate specificities of the β-ketoacyl-acyl carrier protein synthases, FabH and BioZ.","The β-ketoacyl-acyl carrier protein (ACP) synthases are pivotal elongation enzymes that catalyze the condensation of acyl-CoA or acyl-ACP with malonyl-ACP to produce β-ketoacyl-ACP. Among these, the homologous enzymes FabH (β-ketoacyl-ACP synthase III) and the recently characterized BioZ play crucial roles, initiating the biosynthetic pathways for fatty acids and biotin, respectively. FabH primarily utilizes acetyl-CoA as the primer substrate, whereas BioZ exclusively condenses the longer glutar",Xudong Hang; Lin Zhang; Yanqiang Huang; Yuanyuan Hu; Qi Zeng; John E Cronan; Liang Zhang; Hongkai Bi,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,medical AI,,,
+A multivalent nanobody-drug conjugate to prevent and treat influenza virus infections.,We describe the production and use of nanobody drug conjugates that comprise of VHH,Thibault J Harmand; Laura Pietrok; Helen Rich; Rhogerry Deshycka; Laney Flanagan; Aaron Accardo; Novalia Pishesha; Hidde L Ploegh,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,medical AI,,,
+Conformational regulation of two essential activators of bacterial cell elongation.,"The peptidoglycan (PG) cell wall is critical for bacterial growth and survival and is a primary antibiotic target. MreD is an essential accessory factor of the Rod complex, which carries out PG synthesis during elongation, yet little is known about how MreD facilitates this process. Here, we present the cryoelectron microscopy structure of ",Morgan S A Gilman; Irina Shlosman; Daniel D Samé Guerra; Masy Domecillo; Elayne M Fivenson; Claire Bourett; Thomas G Bernhardt; Nicholas F Polizzi; Joseph J Loparo; Andrew C Kruse,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,medical AI,,,
+Scaffold vaccination for prevention of orthopedic device infection.,,Alexander M Tatara; Shanda Lightbown; Shawn Kang; Wei-Hung Jung; Hamza Ijaz; Jean C Lee; Sandra B Nelson; Michael Super; David J Mooney,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,medical AI,,,
+From sequence to scaffold: Computational design of protein nanoparticle vaccines from AlphaFold2-predicted building blocks.,"Self-assembling protein nanoparticles are being increasingly utilized in the design of next-generation vaccines due to their ability to induce antibody responses of superior magnitude, breadth, and durability. Computational protein design offers a route to nanoparticle scaffolds with structural and biochemical features tailored to specific vaccine applications. Although strategies for designing self-assembling proteins have been established, the recent development of powerful machine learning (M",Cyrus M Haas; Naveen Jasti; Annie Dosey; Joel D Allen; Rebecca Gillespie; Jackson McGowan; Elizabeth M Leaf; Max Crispin; Cole A DeForest; Masaru Kanekiyo; Neil P King,2025-06-15,PubMed,,2025.0,medical_paper,pubmed,Proceedings of the National Academy of Sciences of the United States of America,medical AI,,,
+Machine learning,,,,Wikipedia,https://en.wikipedia.org/wiki/Machine_learning,,encyclopedia_article,wikipedia,,,"Machine learning (ML) is a field of study in artificial intelligence concerned with the development and study of statistical algorithms that can learn from data and generalise to unseen data, and thus perform tasks without explicit instructions. Within a subdiscipline in machine learning, advances in the field of deep learning have allowed neural networks, a class of statistical algorithms, to surpass many previous machine learning approaches in performance.",Machine_learning,en
+Artificial intelligence,,,,Wikipedia,https://en.wikipedia.org/wiki/Artificial_intelligence,,encyclopedia_article,wikipedia,,,"Artificial intelligence (AI) is the capability of computational systems to perform tasks typically associated with human intelligence, such as learning, reasoning, problem-solving, perception, and decision-making. It is a field of research in computer science that develops and studies methods and software that enable machines to perceive their environment and use learning and intelligence to take actions that maximize their chances of achieving defined goals.",Artificial_intelligence,en
+Computer science,,,,Wikipedia,https://en.wikipedia.org/wiki/Computer_science,,encyclopedia_article,wikipedia,,,"Computer science is the study of computation, information, and automation. Included broadly in the sciences, computer science spans theoretical disciplines to applied disciplines. An expert in the field is known as a computer scientist.",Computer_science,en
+History of computing,,,,Wikipedia,https://en.wikipedia.org/wiki/History_of_computing,,encyclopedia_article,wikipedia,,,"The history of computing extends beyond the history of computing hardware and modern computing technology including earlier methods that relied on pen and paper or chalk and slate, with or without the aid of tables.",History_of_computing,en
+Machine learning with sklearn,,Thomas P. Trappenberg,2019-01-01,Crossref,https://doi.org/10.1093/oso/9780198828044.003.0003,2019.0,academic_paper,crossref,,,,,
+Optimization and Machine Learning,,,2022-01-01,Crossref,https://doi.org/10.1002/9781119902881,2022.0,academic_paper,crossref,,,,,
+Why Use Automated Machine Learning?,,Kai R. Larsen; Daniel S. Becker,2021-01-01,Crossref,https://doi.org/10.1093/oso/9780190941659.003.0001,2021.0,academic_paper,crossref,,,,,
+Machine learning,,,2012-01-01,Crossref,https://doi.org/10.1017/cbo9780511804779.017,2012.0,academic_paper,crossref,,,,,
+Machine learning,,,2011-01-01,Crossref,https://doi.org/10.1017/cbo9780511975509.007,2011.0,academic_paper,crossref,,,,,
+Editorial: Human and Machine Learning,,Pat Langley,1986-01-01,Crossref,https://doi.org/10.1023/a:1022854429410,1986.0,academic_paper,crossref,,,,,
+Research Papers in Machine Learning,,Pat Langley,1987-01-01,Crossref,https://doi.org/10.1023/a:1022603230145,1987.0,academic_paper,crossref,,,,,
+Machine Learning and Qualitative Reasoning,,Ivan Bratko,1994-01-01,Crossref,https://doi.org/10.1023/a:1022661713654,1994.0,academic_paper,crossref,,,,,
+Machine Learning and Concept Formation,,Pat Langley,1987-01-01,Crossref,https://doi.org/10.1023/a:1022896407371,1987.0,academic_paper,crossref,,,,,
+Front Matter,,,2022-01-01,Crossref,https://doi.org/10.1002/9781119902881.fmatter,2022.0,academic_paper,crossref,,,,,
+Machine Learning: A Maturing Field,,Jaime Carbonell,1992-01-01,Crossref,https://doi.org/10.1023/a:1022665512030,1992.0,academic_paper,crossref,,,,,
+Machine Learning and Grammar Induction,,Pat Langely,1987-01-01,Crossref,https://doi.org/10.1023/a:1022808826027,1987.0,academic_paper,crossref,,,,,
+Editorial: The Terminology of Machine Learning,,Pat Langley,1986-01-01,Crossref,https://doi.org/10.1023/a:1022840627593,1986.0,academic_paper,crossref,,,,,
+Machine learning and medical education,,,2020-01-01,Crossref,https://doi.org/10.37473//10.1038/s41746-018-0061-1,2020.0,academic_paper,crossref,,,,,
+Machine learning concepts,,,2012-01-01,Crossref,https://doi.org/10.1017/cbo9780511804779.018,2012.0,academic_paper,crossref,,,,,
+Index,,,2022-01-01,Crossref,https://doi.org/10.1002/9781119902881.index,2022.0,academic_paper,crossref,,,,,
+Machine Learning as an Experimental Science,,Pat Langley,1988-01-01,Crossref,https://doi.org/10.1023/a:1022623814640,1988.0,academic_paper,crossref,,,,,
+Editorial: Advice to Machine Learning Authors,,Pat Langley,1990-01-01,Crossref,https://doi.org/10.1023/a:1022647305786,1990.0,academic_paper,crossref,,,,,
+New Theoretical Directions In Machine Learning,,David Haussler,1988-01-01,Crossref,https://doi.org/10.1023/a:1022817027844,1988.0,academic_paper,crossref,,,,,
+Adversarial Machine Learning Challenges,,,2019-01-01,Crossref,https://doi.org/10.1017/9781107338548.009,2019.0,academic_paper,crossref,,,,,

@@ -1,0 +1,443 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T12:01:41.987691",
+    "total_papers": 20,
+    "sources": [
+      "epoch_PREHISTORIA"
+    ]
+  },
+  "results": {
+    "epoch_PREHISTORIA": [
+      {
+        "id": "sun_prehistoria_0",
+        "title": "Pozycja Słońca - 4713-11-24",
+        "date": "4713-11-24",
+        "time": "12:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_POSITION",
+        "source": "astropy_library",
+        "content": "Słońce: Azymut 7.0°, Wysokość -58.6°",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 0,
+        "metadata": {
+          "celestial_object": "Sun",
+          "azimuth_deg": 6.996226553086109,
+          "altitude_deg": -58.566988405414534,
+          "ra_deg": 201.83525179174487,
+          "dec_deg": -8.94310422165625,
+          "timestamp_jd": 0,
+          "precision": "monthly",
+          "library": "astropy"
+        }
+      },
+      {
+        "id": "moon_prehistoria_0",
+        "title": "Nów Księżyca - 4713-11-24",
+        "date": "4713-11-24",
+        "time": "00:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "LUNAR_PHASE",
+        "source": "ephem_library",
+        "content": "Księżyc: Nów Księżyca, Faza: 0.013",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 0,
+        "metadata": {
+          "celestial_object": "Moon",
+          "phase_name": "Nów Księżyca",
+          "phase_value": 0.01328442692488152,
+          "altitude_deg": -56.405720319414584,
+          "azimuth_deg": 351.2138147234431,
+          "timestamp_jd": 0,
+          "precision": "monthly",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunrise_prehistoria_0",
+        "title": "Wschód Słońca - 4713-11-24 07:29:55",
+        "date": "4713-11-24",
+        "time": "07:29:55",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Wschód Słońca o 07:29:55 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 0,
+        "metadata": {
+          "event_type": "sunrise",
+          "timestamp_jd": 0,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunset_prehistoria_0",
+        "title": "Zachód Słońca - 4713-11-24 16:01:16",
+        "date": "4713-11-24",
+        "time": "16:01:16",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Zachód Słońca o 16:01:16 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 0,
+        "metadata": {
+          "event_type": "sunset",
+          "timestamp_jd": 0,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sun_prehistoria_30",
+        "title": "Pozycja Słońca - 4713-12-24",
+        "date": "4713-12-24",
+        "time": "12:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_POSITION",
+        "source": "astropy_library",
+        "content": "Słońce: Azymut 2.8°, Wysokość -61.6°",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 30,
+        "metadata": {
+          "celestial_object": "Sun",
+          "azimuth_deg": 2.7817589106454053,
+          "altitude_deg": -61.58488697835375,
+          "ra_deg": 231.0423442429443,
+          "dec_deg": -18.303179995348586,
+          "timestamp_jd": 30,
+          "precision": "monthly",
+          "library": "astropy"
+        }
+      },
+      {
+        "id": "moon_prehistoria_30",
+        "title": "Nów Księżyca - 4713-12-24",
+        "date": "4713-12-24",
+        "time": "00:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "LUNAR_PHASE",
+        "source": "ephem_library",
+        "content": "Księżyc: Nów Księżyca, Faza: 0.031",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 30,
+        "metadata": {
+          "celestial_object": "Moon",
+          "phase_name": "Nów Księżyca",
+          "phase_value": 0.03065630939620595,
+          "altitude_deg": -54.45897474273732,
+          "azimuth_deg": 336.99862177045594,
+          "timestamp_jd": 30,
+          "precision": "monthly",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunrise_prehistoria_30",
+        "title": "Wschód Słońca - 4713-12-24 07:57:59",
+        "date": "4713-12-24",
+        "time": "07:57:59",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Wschód Słońca o 07:57:59 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 30,
+        "metadata": {
+          "event_type": "sunrise",
+          "timestamp_jd": 30,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunset_prehistoria_30",
+        "title": "Zachód Słońca - 4713-12-24 15:53:36",
+        "date": "4713-12-24",
+        "time": "15:53:36",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Zachód Słońca o 15:53:36 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 30,
+        "metadata": {
+          "event_type": "sunset",
+          "timestamp_jd": 30,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sun_prehistoria_60",
+        "title": "Pozycja Słońca - 4712-01-23",
+        "date": "4712-01-23",
+        "time": "12:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_POSITION",
+        "source": "astropy_library",
+        "content": "Słońce: Azymut 357.8°, Wysokość -58.1°",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 60,
+        "metadata": {
+          "celestial_object": "Sun",
+          "azimuth_deg": 357.7610505531256,
+          "altitude_deg": -58.10832887209128,
+          "ra_deg": 262.50548128785215,
+          "dec_deg": -22.911904426232233,
+          "timestamp_jd": 60,
+          "precision": "monthly",
+          "library": "astropy"
+        }
+      },
+      {
+        "id": "moon_prehistoria_60",
+        "title": "Ostatnia Kwadra - 4712-01-23",
+        "date": "4712-01-23",
+        "time": "00:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "LUNAR_PHASE",
+        "source": "ephem_library",
+        "content": "Księżyc: Ostatnia Kwadra, Faza: 0.752",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 60,
+        "metadata": {
+          "celestial_object": "Moon",
+          "phase_name": "Ostatnia Kwadra",
+          "phase_value": 0.7524999848557619,
+          "altitude_deg": 28.210663657425364,
+          "azimuth_deg": 264.3437891433676,
+          "timestamp_jd": 60,
+          "precision": "monthly",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunrise_prehistoria_60",
+        "title": "Wschód Słońca - 4712-01-23 07:45:09",
+        "date": "4712-01-23",
+        "time": "07:45:09",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Wschód Słońca o 07:45:09 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 60,
+        "metadata": {
+          "event_type": "sunrise",
+          "timestamp_jd": 60,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunset_prehistoria_60",
+        "title": "Zachód Słońca - 4712-01-23 16:28:11",
+        "date": "4712-01-23",
+        "time": "16:28:11",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Zachód Słońca o 16:28:11 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 60,
+        "metadata": {
+          "event_type": "sunset",
+          "timestamp_jd": 60,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sun_prehistoria_90",
+        "title": "Pozycja Słońca - 4712-02-22",
+        "date": "4712-02-22",
+        "time": "12:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_POSITION",
+        "source": "astropy_library",
+        "content": "Słońce: Azymut 357.1°, Wysokość -49.2°",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 90,
+        "metadata": {
+          "celestial_object": "Sun",
+          "azimuth_deg": 357.0740938386083,
+          "altitude_deg": -49.21705081370782,
+          "ra_deg": 295.3749795168833,
+          "dec_deg": -21.102429262863442,
+          "timestamp_jd": 90,
+          "precision": "monthly",
+          "library": "astropy"
+        }
+      },
+      {
+        "id": "moon_prehistoria_90",
+        "title": "Ostatnia Kwadra - 4712-02-22",
+        "date": "4712-02-22",
+        "time": "00:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "LUNAR_PHASE",
+        "source": "ephem_library",
+        "content": "Księżyc: Ostatnia Kwadra, Faza: 0.761",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 90,
+        "metadata": {
+          "celestial_object": "Moon",
+          "phase_name": "Ostatnia Kwadra",
+          "phase_value": 0.7605094097086429,
+          "altitude_deg": 31.651437537366473,
+          "azimuth_deg": 261.5107062449136,
+          "timestamp_jd": 90,
+          "precision": "monthly",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunrise_prehistoria_90",
+        "title": "Wschód Słońca - 4712-02-22 06:56:55",
+        "date": "4712-02-22",
+        "time": "06:56:55",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Wschód Słońca o 06:56:55 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 90,
+        "metadata": {
+          "event_type": "sunrise",
+          "timestamp_jd": 90,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunset_prehistoria_90",
+        "title": "Zachód Słońca - 4712-02-22 17:21:44",
+        "date": "4712-02-22",
+        "time": "17:21:44",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Zachód Słońca o 17:21:44 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 90,
+        "metadata": {
+          "event_type": "sunset",
+          "timestamp_jd": 90,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sun_prehistoria_120",
+        "title": "Pozycja Słońca - 4712-03-23",
+        "date": "4712-03-23",
+        "time": "12:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_POSITION",
+        "source": "astropy_library",
+        "content": "Słońce: Azymut 359.1°, Wysokość -37.7°",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 120,
+        "metadata": {
+          "celestial_object": "Sun",
+          "azimuth_deg": 359.10828253136344,
+          "altitude_deg": -37.68534098322282,
+          "ra_deg": 326.2815035949768,
+          "dec_deg": -13.38049919976361,
+          "timestamp_jd": 120,
+          "precision": "monthly",
+          "library": "astropy"
+        }
+      },
+      {
+        "id": "moon_prehistoria_120",
+        "title": "Ostatnia Kwadra - 4712-03-23",
+        "date": "4712-03-23",
+        "time": "00:00:00",
+        "category": "ASTRONOMY",
+        "subcategory": "LUNAR_PHASE",
+        "source": "ephem_library",
+        "content": "Księżyc: Ostatnia Kwadra, Faza: 0.769",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 120,
+        "metadata": {
+          "celestial_object": "Moon",
+          "phase_name": "Ostatnia Kwadra",
+          "phase_value": 0.7691930042831009,
+          "altitude_deg": 29.72389505376086,
+          "azimuth_deg": 254.86984430939748,
+          "timestamp_jd": 120,
+          "precision": "monthly",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunrise_prehistoria_120",
+        "title": "Wschód Słońca - 4712-03-23 05:52:51",
+        "date": "4712-03-23",
+        "time": "05:52:51",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Wschód Słońca o 05:52:51 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 120,
+        "metadata": {
+          "event_type": "sunrise",
+          "timestamp_jd": 120,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      },
+      {
+        "id": "sunset_prehistoria_120",
+        "title": "Zachód Słońca - 4712-03-23 18:15:50",
+        "date": "4712-03-23",
+        "time": "18:15:50",
+        "category": "ASTRONOMY",
+        "subcategory": "SOLAR_EVENT",
+        "source": "ephem_library",
+        "content": "Zachód Słońca o 18:15:50 UTC",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day": 120,
+        "metadata": {
+          "event_type": "sunset",
+          "timestamp_jd": 120,
+          "location": "Greenwich",
+          "precision": "minute",
+          "library": "ephem"
+        }
+      }
+    ]
+  }
+}

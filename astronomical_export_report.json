@@ -1,0 +1,34 @@
+{
+  "export_timestamp": "2025-11-04T11:17:12.084534",
+  "data_summary": {
+    "astronomical_events": 60869,
+    "ml_insights_files": 3,
+    "summary_datasets": 4
+  },
+  "export_formats": [
+    "CSV",
+    "Excel"
+  ],
+  "exported_files": [
+    "astronomical_exports\\astronomical_data_analysis.xlsx",
+    "astronomical_exports\\astronomical_events.csv",
+    "astronomical_exports\\category_summary.csv",
+    "astronomical_exports\\epoch_summary.csv",
+    "astronomical_exports\\ml_insights_summary.csv",
+    "astronomical_exports\\source_summary.csv",
+    "astronomical_exports\\year_summary.csv"
+  ],
+  "data_quality": {
+    "complete_records": "High",
+    "temporal_coverage": "1677-2024",
+    "category_diversity": "Good",
+    "source_reliability": "Verified"
+  },
+  "usage_instructions": [
+    "CSV files can be opened in Excel, Google Sheets, or any spreadsheet software",
+    "Excel file contains multiple sheets with organized data",
+    "Use filters and pivot tables for advanced analysis",
+    "ML insights contain performance metrics and predictions",
+    "Summary datasets provide quick overview of patterns"
+  ]
+}

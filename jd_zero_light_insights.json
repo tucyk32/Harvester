@@ -1,0 +1,44 @@
+{
+  "jd_range": {
+    "min_jd": 0.0,
+    "max_jd": 2460657.5,
+    "span_days": 2460657.5,
+    "span_years": 6736.913073237509
+  },
+  "data_summary": {
+    "total_events": 9014,
+    "subcategories": {
+      "METEOR_SHOWER": 8889,
+      "SOLAR_EVENT": 54,
+      "SOLAR_POSITION": 27,
+      "LUNAR_PHASE": 27,
+      "COMET": 17
+    },
+    "sources": {
+      "astronomical_records": 8889,
+      "ephem_library": 81,
+      "astropy_library": 27,
+      "historical_astronomical_records": 17
+    },
+    "epochs": {
+      "WCZESNE ŚREDNIOWIECZE": 2000,
+      "WIEK XIX": 2000,
+      "NOWOŻYTNOŚĆ": 2000,
+      "WYSOKIE ŚREDNIOWIECZE": 2000,
+      "WSPÓŁCZESNOŚĆ": 905,
+      "ANTYK PÓŹNY": 47,
+      "ANTYK WCZESNY": 42,
+      "PREHISTORIA": 20
+    }
+  },
+  "astronomical_cycles": {
+    "solar_cycles": 6736.913073237509,
+    "lunar_cycles": 83327.37893667456,
+    "metonic_cycles": 354.57437227565833
+  },
+  "ml_performance": {
+    "classifier_accuracy": 0.9844731977818854,
+    "clustering_silhouette": 0.2525235193855282,
+    "n_clusters": 6
+  }
+}

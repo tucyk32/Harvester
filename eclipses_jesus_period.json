@@ -1,0 +1,15 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T10:35:13.058243",
+    "period": "30-33 AD",
+    "method": "Skyfield DE421",
+    "crucifixion_date": "33-04-15"
+  },
+  "solar_eclipses": [],
+  "lunar_eclipses": [],
+  "statistics": {
+    "days_checked": 1460,
+    "solar_eclipses_count": 0,
+    "lunar_eclipses_count": 0
+  }
+}

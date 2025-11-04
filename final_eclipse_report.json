@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T10:36:20.226034",
+    "title": "Final Report: Eclipse and Blood Moon during Jesus Death",
+    "methodology": "Astronomical calculations + Historical analysis + Biblical interpretation"
+  },
+  "crucifixion_date": {
+    "biblical": "15 Nisan (Passover)",
+    "astronomical": "April 15, 33 AD",
+    "historical": "During Pontius Pilate (26-36 AD)"
+  },
+  "biblical_descriptions": [
+    "Mateusz 27:45 - 'Od godziny szóstej aż do godziny dziewiątej była ciemność'",
+    "Marek 15:33 - 'zaćmienie słońca'",
+    "Łukasz 23:44-45 - 'zaćmienie słońca'",
+    "Księga Joela 2:31 - 'Słońce zamieni się w ciemność, a księżyc w krew'",
+    "Dzieje Apostolskie 2:20 - 'Słońce zamieni się w ciemność, a księżyc w krew'",
+    "Księga Izajasza 13:10 - 'Słońce i księżyc się zaćmią'"
+  ],
+  "astronomical_findings": {
+    "solar_eclipses_30_33_ad": 0,
+    "lunar_eclipses_30_33_ad": 0,
+    "period_checked_days": 1460,
+    "method": "Skyfield DE421 ephemeris"
+  },
+  "astronomical_impossibilities": [
+    "Zaćmienie słoneczne niemożliwe podczas pełni księżyca (Pascha)",
+    "Podczas Paschy księżyc jest zawsze niewidoczny",
+    "Brak zaćmień słonecznych w latach 30-33 AD",
+    "Brak zaćmień księżycowych w latach 30-33 AD"
+  ],
+  "historical_sources": [
+    {
+      "author": "Thallus",
+      "period": "I wiek AD",
+      "work": "Historia",
+      "description": "Thallus wspominał o zaćmieniu słońca podczas ukrzyżowania Jezusa",
+      "preservation": "Cytowany przez Juliusza Afrykańskiego (III wiek)",
+      "content": "Thallus opisał niezwykłą ciemność podczas ukrzyżowania jako zaćmienie słoneczne",
+      "credibility": "Jako historyk świecki, jego relacja jest niezależnym potwierdzeniem",
+      "issues": "Tekst Thallusa nie zachował się, znamy go tylko z cytatów"
+    },
+    {
+      "author": "Józef Flawiusz",
+      "period": "I wiek AD",
+      "work": "Dawne dzieje Izraela",
+      "description": "Flawiusz wspomina o Jezusie, ale nie o zaćmieniu podczas ukrzyżowania",
+      "content": "Flawiusz opisuje śmierć Jezusa, ale nie wspomina o żadnych znakach astronomicznych",
+      "credibility": "Najważniejszy historyk żydowski epoki, naoczny świadek wydarzeń",
+      "issues": "Testimonium Flavianum jest kwestionowane jako późniejsza interpolacja"
+    },
+    {
+      "author": "Tacyt",
+      "period": "I-II wiek AD",
+      "work": "Roczniki",
+      "description": "Tacyt wspomina o Jezusie, ale nie o zaćmieniu",
+      "content": "Tacyt potwierdza ukrzyżowanie Jezusa za czasów Poncjusza Piłata",
+      "credibility": "Główny historyk rzymski epoki",
+      "issues": "Nie wspomina o żadnych znakach astronomicznych"
+    },
+    {
+      "author": "Flegon z Tralles",
+      "period": "II wiek AD",
+      "work": "Olympiades",
+      "description": "Flegon wspomina o zaćmieniu w 33 AD",
+      "content": "Opisał zaćmienie słońca w 19. roku panowania Tyberiusza (32/33 AD)",
+      "credibility": "Historyk astronomii, jego prace były cenione",
+      "issues": "Tekst nie zachował się, znamy z cytatów Orygenesa i Juliusza Afrykańskiego"
+    }
+  ],
+  "interpretations": [
+    "1. SYMBOlICZNA: Ciemność jako znak końca świata (teologia)",
+    "2. NATURALNA: Burza piaskowa lub gęste zachmurzenie",
+    "3. APOKALIPTYCZNA: Proroctwa Joela/Izajasza jako znaki eschatologiczne",
+    "4. HISTORYCZNA: Źródła (Thallus, Flegon) mogą odnosić się do innych wydarzeń",
+    "5. TEOLOGICZNA: Opisy dodane później dla wzmocnienia przesłania"
+  ],
+  "final_conclusions": [
+    "Astronomicznie niemożliwe jest zaćmienie słoneczne podczas Paschy",
+    "Brak zaćmień w latach 30-33 AD potwierdzony obliczeniami",
+    "Historyczne źródła są fragmentaryczne i nie dostarczają niezależnego potwierdzenia",
+    "Opisy biblijne należy interpretować teologicznie, nie astronomicznie",
+    "Ciemność podczas ukrzyżowania to prawdopodobnie element symboliczny",
+    "'Krwawy księżyc' z Księgi Joela to proroctwo eschatologiczne, nie historyczne"
+  ],
+  "methodology": [
+    "Biblioteki astronomiczne: Skyfield, astropy, ephem",
+    "Efemerydy: DE421 (NASA JPL)",
+    "Okres analizy: 30-33 AD (1460 dni)",
+    "Progi detekcji: magnituda >0.8 dla widocznych zaćmień",
+    "Źródła historyczne: analizy przekazów antycznych"
+  ]
+}

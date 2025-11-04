@@ -1,0 +1,6 @@
+﻿subcategory,count,year_min,year_max,year_mean,primary_source
+COMET,45,1682.0,1986.0,1834.2,historical_astronomical_records
+LUNAR_PHASE,40,1858.0,1995.0,1942.73,ephem_library
+METEOR_SHOWER,60664,1677.0,2024.0,1850.62,astronomical_records
+SOLAR_EVENT,80,1858.0,1995.0,1942.73,ephem_library
+SOLAR_POSITION,40,1858.0,1995.0,1942.73,astropy_library

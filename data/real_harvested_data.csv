@@ -1,0 +1,219 @@
+title,abstract,publication_date,source_database,url,year_abs,jd,am_day,content,date_str,source
+"Calculating the Middle Ages? The Project ""Complexities and Networks in
+  the Medieval Mediterranean and Near East"" (COMMED)","The project ""Complexities and networks in the Medieval Mediterranean and Near
+East"" (COMMED) at the Division for Byzantine Research of the Institute for
+Medieval Research (IMAFO) of the Austrian Academy of Sciences focuses on the
+adaptation and development of concepts and tools of network theory and
+complexity sciences for the analysis of societies, polities and regions in the
+medieval world in a comparative perspective. Key elements of its methodological
+and technological toolkit are applied, for instance, in the new project
+""Mapping medieval conflicts: a digital approach towards political dynamics in
+the pre-modern period"" (MEDCON), which analyses political networks and conflict
+among power elites across medieval Europe with five case studies from the 12th
+to 15th century. For one of these case studies on 14th century Byzantium, the
+explanatory value of this approach is presented in greater detail. The
+presented results are integrated in a wider comparison of five late medieval
+polities across Afro-Eurasia (Byzantium, China, England, Hungary and Mamluk
+Egypt) against the background of the {\guillemotright}Late Medieval
+Crisis{\guillemotleft} and its political and environmental turmoil. Finally,
+further perspectives of COMMED are outlined.",2015-12-11,arxiv,http://arxiv.org/abs/1606.03433v1,2015,2457367.5,719203.5,,,
+"Unveiling Factors for Enhanced POS Tagging: A Study of Low-Resource
+  Medieval Romance Languages","Part-of-speech (POS) tagging remains a foundational component in natural
+language processing pipelines, particularly critical for historical text
+analysis at the intersection of computational linguistics and digital
+humanities. Despite significant advancements in modern large language models
+(LLMs) for ancient languages, their application to Medieval Romance languages
+presents distinctive challenges stemming from diachronic linguistic evolution,
+spelling variations, and labeled data scarcity. This study systematically
+investigates the central determinants of POS tagging performance across diverse
+corpora of Medieval Occitan, Medieval Spanish, and Medieval French texts,
+spanning biblical, hagiographical, medical, and dietary domains. Through
+rigorous experimentation, we evaluate how fine-tuning approaches, prompt
+engineering, model architectures, decoding strategies, and cross-lingual
+transfer learning techniques affect tagging accuracy. Our results reveal both
+notable limitations in LLMs' ability to process historical language variations
+and non-standardized spelling, as well as promising specialized techniques that
+effectively address the unique challenges presented by low-resource historical
+languages.",2025-06-21,arxiv,http://arxiv.org/abs/2506.17715v1,2025,2460847.5,722683.5,,,
+Study by the Methods of Physics of some Medieval Coins,"A number of medieval coins from the Brukenthal Museum, Sibiu, Romania have
+been analyzed by the means of three methods: gamma transmission, X-ray
+fluoresecence and neutron activation analysis. The values of the concentrations
+of the elements determined given by the three methods are discussed.",1999-08-30,arxiv,http://arxiv.org/abs/nucl-ex/9908021v1,1999,2451420.5,713256.5,,,
+"A Vector-Algebraic Reconstruction of the Medieval Arab Formula for the
+  Shadow of a Gnomon","We present a modern reconstruction of the classical formula, first derived by
+medieval Arab astronomers, that describes the trajectory of the tip of a
+gnomon's shadow during the day as a function of latitude, solar declination,
+and gnomon height. Unlike the traditional derivations based on spherical
+trigonometry, our approach uses only elementary vector algebra and rotation
+matrices. The same vector framework naturally extends to other classical
+relations used in sundial construction.",2025-10-14,arxiv,http://arxiv.org/abs/2510.12913v1,2025,2460962.5,722798.5,,,
+"Datamining a medieval medical text reveals patterns in ingredient choice
+  that reflect biological activity against the causative agents of specified
+  infections","The pharmacopeia used by physicians and lay people in medieval Europe has
+largely been dismissed as placebo or superstition. While we now recognise that
+some of the materia medica used by medieval physicians could have had useful
+biological properties, research in this area is limited by the labour-intensive
+process of searching and interpreting historical medical texts. Here, we
+demonstrate the potential power of turning medieval medical texts into
+contextualised electronic databases amenable to exploration by algorithm. We
+use established methodologies from network science to reveal statistically
+significant patterns in ingredient selection and usage in a key text, the
+fifteenth-century Lylye of Medicynes, focusing on remedies to treat symptoms of
+microbial infection. We discuss the potential that these patterns reflect
+rational medical decisions. In providing a worked example of data-driven
+textual analysis, we demonstrate the potential of this approach to encourage
+interdisciplinary collaboration and to shine a new light on the
+ethnopharmacology of historical medical texts.",2018-07-18,arxiv,http://arxiv.org/abs/1807.07127v1,2018,2458317.5,720153.5,,,
+"Why modeling? The visual as a reflection of intellectual perspectives in
+  medieval history","This article examines the importance of graphic representations in the social
+sciences, and particularly in (medieval) history, taking as its starting point
+a reflection by {\'E}tienne-Jules Marey, a physiologist and pioneer of
+19th-century photography and cinema. Marey believed that the visual should
+replace language in many fields. Indeed, the twentieth and early twenty-first
+centuries saw an exponential multiplication of visual media, particularly with
+the advent of digital technology. However, this ''graphics revolution'' has not
+affected all disciplines equally. Significant differences remain between
+scientific fields such as astrophysics, anthropology, chemistry and medieval
+history, despite their shared commitment to describing dynamic processes and
+changes of state. Yet, while historians have already digitized a large part of
+the cultural heritage from Antiquity to the 10th-13th centuries, exploration of
+this corpus using visualizations remains limited. There is therefore untapped
+potential in this field.This article begins by outlining a typology and
+quantification of the past and potential roles of visual representations in
+medieval history. It examines two distinct intellectual approaches: 1. the use
+of visuals to support a scientific discourse (majority) and 2. the construction
+of a historical discourse based on observations made from visual figures with
+the aim of modeling phenomena invisible to the naked eye. The author thus
+examines the use of ''images'' in medievalism, focusing on the annual volumes
+of the Soci{\'e}t{\'e} des historiens m{\'e}di{\'e}vistes de l'enseignement
+sup{\'e}rieur (SHMESP), up to 2006. Two other parts of the text look at the
+still-rare forms of visual representation in medieval history, particularly
+those with a ''heuristic vocation'', using iconographic objects, parchments,
+buildings and digitized texts. The article suggests various visualization
+techniques, such as network analysis, the creation of ''stemmas 2.0'' and
+interactive chronologies, which could benefit the discipline. These methods
+could potentially profoundly change our understanding of ancient societies, by
+showing the dynamic relationships between different aspects of these societies.
+One of the most important advances expected from these visual methods is a
+better understanding of the patterns of development in medieval Europe, which
+varied from region to region. The hypothesis is that the scarcity of heuristic
+graphics in medieval history stems from the relationship with ancient documents
+and the historical method based on narration and exemplarity. The article thus
+questions the value of ''visual modelling'' in medieval history, and highlights
+the challenges associated with the widespread adoption of this approach in the
+humanities and social sciences. Finally, the text invites us to reflect on the
+nature and functioning of heuristic visual devices, by comparing medieval
+''images'' and contemporary scientific visuals. In both cases, the point is to
+materialize the invisible in order to show something that exists beyond the
+visual. The author suggests that this way of approaching visuals could play a
+growing role in the decades to come, particularly in the field of data science.",2023-09-06,arxiv,http://arxiv.org/abs/2310.05949v1,2023,2460193.5,722029.5,,,
+Mining a medieval social network by kernel SOM and related methods,"This paper briefly presents several ways to understand the organization of a
+large social network (several hundreds of persons). We compare approaches
+coming from data mining for clustering the vertices of a graph (spectral
+clustering, self-organizing algorithms. . .) and provide methods for
+representing the graph from these analysis. All these methods are illustrated
+on a medieval social network and the way they can help to understand its
+organization is underlined.",2008-05-09,arxiv,http://arxiv.org/abs/0805.1374v1,2008,2454595.5,716431.5,,,
+From Rome to the Antipodes: the medieval form of the world,"Here we discuss how some medieval scholars in the Western Europe viewed the
+form of the world and the problem of the Antipodes, starting from the Natural
+History written by Pliny and ending in the Hell of Dante Alighieri. From the
+center of the Earth, Dante and Virgil came to the Antipodes: eventually, their
+existence was accepted. Among the others, we will discuss the works of the
+Venerable Bede and Sylvester the Second.",2012-11-13,arxiv,http://arxiv.org/abs/1211.3004v2,2012,2456244.5,718080.5,,,
+Robert Grosseteste's thought on Light and Form of the World,"Robert Grosseteste was one of the most prominent thinkers of the Thirteenth
+Century. Philosopher and scientist, he proposed a metaphysics based on the
+propagation of light. In this framework, he gave a cosmology too. Here we will
+discuss the treatise where Grosseteste proposed it, that entitled 'De luce, seu
+de incohatione formarum', 'On Light and the Beginning of Forms'.",2014-04-13,arxiv,http://arxiv.org/abs/1404.3371v1,2014,2456760.5,718596.5,,,
+"Spectral Domain Decomposition Method for Natural Lighting and Medieval
+  Glass Rendering","In this paper, we use an original ray-tracing domain decomposition method to
+address image rendering of naturally lighted scenes. This new method allows to
+particularly analyze rendering problems on parallel architectures, in the case
+of interactions between light-rays and glass material. Numerical experiments,
+for medieval glass rendering within the church of the Royaumont abbey,
+illustrate the performance of the proposed ray-tracing domain decomposition
+method (DDM) on multi-cores and multi-processors architectures. On one hand,
+applying domain decomposition techniques increases speedups obtained by
+parallelizing the computation. On the other hand, for a fixed number of
+parallel processes, we notice that speedups increase as the number of
+sub-domains do.",2019-12-09,arxiv,http://arxiv.org/abs/1912.05494v1,2019,2458826.5,720662.5,,,
+Automated Prediction of Medieval Arabic Diacritics,"This study uses a character level neural machine translation approach trained
+on a long short-term memory-based bi-directional recurrent neural network
+architecture for diacritization of Medieval Arabic. The results improve from
+the online tool used as a baseline. A diacritization model have been published
+openly through an easy to use Python package available on PyPi and Zenodo. We
+have found that context size should be considered when optimizing a feasible
+prediction model.",2020-10-11,arxiv,http://arxiv.org/abs/2010.05269v1,2020,2459133.5,720969.5,,,
+"SharedCanvas: A Collaborative Model for Medieval Manuscript Layout
+  Dissemination","In this paper we present a model based on the principles of Linked Data that
+can be used to describe the interrelationships of images, texts and other
+resources to facilitate the interoperability of repositories of medieval
+manuscripts or other culturally important handwritten documents. The model is
+designed from a set of requirements derived from the real world use cases of
+some of the largest digitized medieval content holders, and instantiations of
+the model are intended as the input to collection-independent page turning and
+scholarly presentation interfaces. A canvas painting paradigm, such as in PDF
+and SVG, was selected based on the lack of a one to one correlation between
+image and page, and to fulfill complex requirements such as when the full text
+of a page is known, but only fragments of the physical object remain. The model
+is implemented using technologies such as OAI-ORE Aggregations and OAC
+Annotations, as the fundamental building blocks of emerging Linked Digital
+Libraries. The model and implementation are evaluated through prototypes of
+both content providing and consuming applications. Although the system was
+designed from requirements drawn from the medieval manuscript domain, it is
+applicable to any layout-oriented presentation of images of text.",2011-04-14,arxiv,http://arxiv.org/abs/1104.2925v1,2011,2455665.5,717501.5,,,
+"The Heart is a Dust Board: Abu'l Wafa Al-Buzjani, Dissection,
+  Construction, and the Dialog Between Art and Mathematics in Medieval Islamic
+  Culture. An Article","Penrose tilings and Arabic Mathematical explorations. One single article
+published in the 2010 HOM-SIGMAA publication by the Mathematical Association of
+America.",2019-10-28,arxiv,http://arxiv.org/abs/1910.14432v1,2019,2458784.5,720620.5,,,
+Transcribing Medieval Manuscripts for Machine Learning,"This article focuses on the transcription of medieval manuscripts. Whereas
+problems of transcription have long interested medievalists, few workable
+options in the era of printed editions were available besides normalisation.
+The automation of this process, known as handwritten text recognition (HTR),
+has made new kinds of digital text creation possible, but also has foregrounded
+the necessity of theorising transcription in our scholarly practices. We
+reflect here on different notions of transcription against the backdrop of
+changing text technologies. Moreover, drawing on our own research on medieval
+Latin Bibles, we present general guidelines for customizing transcription
+schemes, arguing that they must be designed with specific research questions
+and scholarly end use in mind. Since we are particularly interested in the
+scribal contribution to the production of codices, our transcription guidelines
+aim to capture abbreviations and orthographic variation between different
+textual witnesses for downstream machine learning tasks. In the final section
+of the article, we discuss a few examples of how the HTR-created transcriptions
+allow us to address new questions at scale in medieval manuscripts, such as
+textual variance across witnesses, the prediction of a change in scribal hands
+within a single manuscript as well as the profiling of individual and regional
+scribal characteristics.",2022-07-15,arxiv,http://arxiv.org/abs/2207.07726v3,2022,2459775.5,721611.5,,,
+A tailored Handwritten-Text-Recognition System for Medieval Latin,"The Bavarian Academy of Sciences and Humanities aims to digitize its Medieval
+Latin Dictionary. This dictionary entails record cards referring to lemmas in
+medieval Latin, a low-resource language. A crucial step of the digitization
+process is the Handwritten Text Recognition (HTR) of the handwritten lemmas
+found on these record cards. In our work, we introduce an end-to-end pipeline,
+tailored to the medieval Latin dictionary, for locating, extracting, and
+transcribing the lemmas. We employ two state-of-the-art (SOTA) image
+segmentation models to prepare the initial data set for the HTR task.
+Furthermore, we experiment with different transformer-based models and conduct
+a set of experiments to explore the capabilities of different combinations of
+vision encoders with a GPT-2 decoder. Additionally, we also apply extensive
+data augmentation resulting in a highly competitive model. The best-performing
+setup achieved a Character Error Rate (CER) of 0.015, which is even superior to
+the commercial Google Cloud Vision model, and shows more stable performance.",2023-08-18,arxiv,http://arxiv.org/abs/2308.09368v1,2023,2460174.5,722010.5,,,
+Events in January 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2459959.5,721795.5,Wikipedia page for 2023 mentions events in January,2023-01-15,wikipedia_en
+Events in February 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2459990.5,721826.5,Wikipedia page for 2023 mentions events in February,2023-02-15,wikipedia_en
+Events in March 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460018.5,721854.5,Wikipedia page for 2023 mentions events in March,2023-03-15,wikipedia_en
+Events in April 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460049.5,721885.5,Wikipedia page for 2023 mentions events in April,2023-04-15,wikipedia_en
+Events in May 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460079.5,721915.5,Wikipedia page for 2023 mentions events in May,2023-05-15,wikipedia_en
+Events in June 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460110.5,721946.5,Wikipedia page for 2023 mentions events in June,2023-06-15,wikipedia_en
+Events in July 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460140.5,721976.5,Wikipedia page for 2023 mentions events in July,2023-07-15,wikipedia_en
+Events in August 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460171.5,722007.5,Wikipedia page for 2023 mentions events in August,2023-08-15,wikipedia_en
+Events in September 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460202.5,722038.5,Wikipedia page for 2023 mentions events in September,2023-09-15,wikipedia_en
+Events in October 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460232.5,722068.5,Wikipedia page for 2023 mentions events in October,2023-10-15,wikipedia_en
+Events in November 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460263.5,722099.5,Wikipedia page for 2023 mentions events in November,2023-11-15,wikipedia_en
+Events in December 2023,,,,https://en.wikipedia.org/wiki/2023,2023,2460293.5,722129.5,Wikipedia page for 2023 mentions events in December,2023-12-15,wikipedia_en
+A probable case of multiple osteochondromas from an Early Medieval burial site in the Venetian lagoon (Italy): Differential diagnosis and review of cases from archaeological contexts.,To evaluate a pathological condition on a skeleton from medieval Veneto (Italy).,2025-06-15,pubmed,,2025,2460841.5,722677.5,,,
+Modified kraft lignin as sustainable consolidants for waterlogged archaeological wood.,"This study evaluates lightened kraft lignin: modified via acetylation and encapsulation, as a sustainable consolidant for waterlogged archaeological pine (Pinus sp.) from the Biskupin site (Poland). Lignin was acetylated with acetic anhydride/pyridine and, in a separate route, converted into colloidal capsules by tetrahydrofuran/water self‑assembly; both modifications were characterized and then applied to waterlogged archaeological wood by 2‑week immersion. Effectiveness was assessed by Fourier",2025-06-15,pubmed,,2025,2460841.5,722677.5,,,
+Dynamic human admixture histories over the past ~1300 years at the northern Himalayan frontier.,"Archaeological and paleogenomic evidence from the Tibetan Plateau and high-altitude Central Himalayas suggest biocultural connections with each other and with lowland East, Central, and South Asia. However, genetic histories at the northern frontier of the Indian Himalayas, which is geographically more proximal to Central and lowland South Asia, remain underexplored. We analyzed genome-wide data from 7 ancient (~2300 to 100 years old) and 10 present-day individuals from the northern Indian Himal",2025-06-15,pubmed,,2025,2460841.5,722677.5,,,
+The spatiotemporal distribution characteristics and influencing factors of ancient tombs in China: A study on the conservation of ancient tombs in China.,"Ancient tombs were valuable cultural heritage of China and possessed immeasurable significance. However, research on their spatiotemporal distribution and influencing factors was relatively absent. Based on the establishment of a national geographic information database of ancient tombs, this study employed ArcGIS and SPSS software to conduct both qualitative and quantitative analyses of the extant ancient tombs in China, with the aim of providing support for the protection of Chinese ancient to",2025-06-15,pubmed,,2025,2460841.5,722677.5,,,
+"Analysis of the Fiber Residues Unearthed from the Dabuzi Han Tomb in Xi'an, Shaanxi.","In 2021, archeologists found that a bronze mirror was wrapped with a yellow-green fiber sheet in the Western Han tomb M68 in the Dabuzi Cemetery in Xi'an, China. To ascertain the composition and function, a scanning electronic microscopy-energy dispersive spectrometer (SEM-EDS), Fourier transform infrared spectroscopy (FTIR), and pyrolysis gas chromatography-mass spectrometry (Py-GC/MS) were combined for the morphology and components' analysis. The results showed that the surface of the yellow-g",2025-06-15,pubmed,,2025,2460841.5,722677.5,,,

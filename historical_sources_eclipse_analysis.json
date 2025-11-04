@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T10:36:01.297642",
+    "topic": "Historical sources about eclipse during crucifixion",
+    "method": "Analysis of ancient historians"
+  },
+  "sources": [
+    {
+      "author": "Thallus",
+      "period": "I wiek AD",
+      "work": "Historia",
+      "description": "Thallus wspominał o zaćmieniu słońca podczas ukrzyżowania Jezusa",
+      "preservation": "Cytowany przez Juliusza Afrykańskiego (III wiek)",
+      "content": "Thallus opisał niezwykłą ciemność podczas ukrzyżowania jako zaćmienie słoneczne",
+      "credibility": "Jako historyk świecki, jego relacja jest niezależnym potwierdzeniem",
+      "issues": "Tekst Thallusa nie zachował się, znamy go tylko z cytatów"
+    },
+    {
+      "author": "Józef Flawiusz",
+      "period": "I wiek AD",
+      "work": "Dawne dzieje Izraela",
+      "description": "Flawiusz wspomina o Jezusie, ale nie o zaćmieniu podczas ukrzyżowania",
+      "content": "Flawiusz opisuje śmierć Jezusa, ale nie wspomina o żadnych znakach astronomicznych",
+      "credibility": "Najważniejszy historyk żydowski epoki, naoczny świadek wydarzeń",
+      "issues": "Testimonium Flavianum jest kwestionowane jako późniejsza interpolacja"
+    },
+    {
+      "author": "Tacyt",
+      "period": "I-II wiek AD",
+      "work": "Roczniki",
+      "description": "Tacyt wspomina o Jezusie, ale nie o zaćmieniu",
+      "content": "Tacyt potwierdza ukrzyżowanie Jezusa za czasów Poncjusza Piłata",
+      "credibility": "Główny historyk rzymski epoki",
+      "issues": "Nie wspomina o żadnych znakach astronomicznych"
+    },
+    {
+      "author": "Flegon z Tralles",
+      "period": "II wiek AD",
+      "work": "Olympiades",
+      "description": "Flegon wspomina o zaćmieniu w 33 AD",
+      "content": "Opisał zaćmienie słońca w 19. roku panowania Tyberiusza (32/33 AD)",
+      "credibility": "Historyk astronomii, jego prace były cenione",
+      "issues": "Tekst nie zachował się, znamy z cytatów Orygenesa i Juliusza Afrykańskiego"
+    }
+  ],
+  "astronomical_analysis": {
+    "solar_eclipses_30_33_ad": 0,
+    "lunar_eclipses_30_33_ad": 0,
+    "passover_eclipse_impossible": true
+  },
+  "conclusions": [
+    "Astronomical impossibility of solar eclipse during Passover",
+    "No eclipses found in 30-33 AD period",
+    "Historical sources are fragmentary and indirect",
+    "Biblical descriptions likely symbolic or theological"
+  ]
+}

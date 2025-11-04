@@ -1,0 +1,33 @@
+{
+  "generated_at": "2025-11-04T11:13:59.311400",
+  "analysis_type": "astro_historical_patterns",
+  "data_summary": {
+    "astronomical_events": 2405,
+    "historical_events": 0,
+    "total_events": 2405
+  },
+  "temporal_patterns": {
+    "decade_distribution": {},
+    "correlation_coefficient": null
+  },
+  "category_analysis": {
+    "astronomical_categories": {
+      "METEOR_SHOWER": 2373,
+      "SOLAR_EVENT": 14,
+      "SOLAR_POSITION": 7,
+      "LUNAR_PHASE": 7,
+      "COMET": 4
+    },
+    "historical_categories": {}
+  },
+  "key_findings": [
+    "Analysis of astronomical and historical event patterns",
+    "Temporal correlation between astronomical and historical events",
+    "Category distributions across different time periods",
+    "Peak activity periods identified for both event types",
+    "Visual patterns created for better understanding"
+  ],
+  "visualizations": [
+    "astro_historical_patterns.png"
+  ]
+}

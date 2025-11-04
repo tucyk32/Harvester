@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T02:56:38.720079",
+    "total_papers": 10,
+    "sources": [
+      "theoretical_ANTYK PÓŹNY"
+    ]
+  },
+  "results": {
+    "theoretical_ANTYK PÓŹNY": [
+      {
+        "id": "historical_antyk późny_0",
+        "title": "Marker historyczny: Budowa Stonehenge (~3100 BC)",
+        "date": "-606-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_1",
+        "title": "Marker historyczny: Dynastie egipskie (~3100 BC)",
+        "date": "-506-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_2",
+        "title": "Marker historyczny: Wynalezienie pisma (~3200 BC)",
+        "date": "-406-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_3",
+        "title": "Marker historyczny: Wielka Piramida (~2580 BC)",
+        "date": "-306-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_4",
+        "title": "Marker historyczny: Kod Hammurabiego (~1750 BC)",
+        "date": "-206-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_5",
+        "title": "Marker historyczny: Upadek Troi (~1180 BC)",
+        "date": "-106-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_6",
+        "title": "Marker historyczny: Początek olimpiad (776 BC)",
+        "date": "-6-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_7",
+        "title": "Marker historyczny: Założenie Rzymu (753 BC)",
+        "date": "94-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_8",
+        "title": "Marker historyczny: Budda (563 BC)",
+        "date": "194-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      },
+      {
+        "id": "historical_antyk późny_9",
+        "title": "Marker historyczny: Konfucjusz (551 BC)",
+        "date": "294-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK PÓŹNY",
+        "epoch": "ANTYK PÓŹNY",
+        "epoch_period": "72 BC - 1 AD",
+        "julian_day_start": 1500000,
+        "julian_day_end": 1721426,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK PÓŹNY"
+        }
+      }
+    ]
+  }
+}

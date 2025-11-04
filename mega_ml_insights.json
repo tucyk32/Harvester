@@ -1,0 +1,68 @@
+{
+  "data_summary": {
+    "total_records": 4666,
+    "datasets_used": [
+      "advanced_harvester",
+      "scientific_papers",
+      "real_data_complete",
+      "real_harvested",
+      "ml_complete",
+      "ml_features",
+      "ml_high_confidence",
+      "ml_timeseries"
+    ],
+    "records_per_dataset": {
+      "advanced_harvester": 1734,
+      "scientific_papers": 1227,
+      "real_data_complete": 82,
+      "real_harvested": 32,
+      "ml_complete": 534,
+      "ml_features": 534,
+      "ml_high_confidence": 300,
+      "ml_timeseries": 223
+    }
+  },
+  "temporal_coverage": {
+    "earliest_year": 1986,
+    "latest_year": 2025,
+    "span_years": 39,
+    "records_with_dates": 1812
+  },
+  "model_performance": {
+    "category_classifier": "Trained successfully",
+    "year_predictor": "Trained successfully",
+    "kmeans": "Trained successfully"
+  },
+  "clustering_results": {
+    "n_clusters": 8,
+    "cluster_sizes": {
+      "1": 1370,
+      "0": 1360,
+      "7": 820,
+      "5": 384,
+      "2": 308,
+      "6": 191,
+      "3": 131,
+      "4": 102
+    }
+  },
+  "top_categories": {
+    "scientific_paper": 2159,
+    "": 871,
+    "geological_event": 499,
+    "wydarzen": 368,
+    "events": 312,
+    "ereignis": 119,
+    "urodzenia": 112,
+    "zgony": 86,
+    "événement": 53,
+    "death": 51
+  },
+  "recommendations": [
+    "Dataset contains 4666 total records from 8 sources",
+    "Temporal span: 39 years",
+    "Most common category: scientific_paper",
+    "Models trained for classification, regression, and clustering",
+    "Ready for advanced historical analysis and prediction"
+  ]
+}

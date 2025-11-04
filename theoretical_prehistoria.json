@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T02:56:25.530511",
+    "total_papers": 10,
+    "sources": [
+      "theoretical_PREHISTORIA"
+    ]
+  },
+  "results": {
+    "theoretical_PREHISTORIA": [
+      {
+        "id": "historical_prehistoria_0",
+        "title": "Marker historyczny: Budowa Stonehenge (~3100 BC)",
+        "date": "-4713-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_1",
+        "title": "Marker historyczny: Dynastie egipskie (~3100 BC)",
+        "date": "-4613-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_2",
+        "title": "Marker historyczny: Wynalezienie pisma (~3200 BC)",
+        "date": "-4513-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_3",
+        "title": "Marker historyczny: Wielka Piramida (~2580 BC)",
+        "date": "-4413-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_4",
+        "title": "Marker historyczny: Kod Hammurabiego (~1750 BC)",
+        "date": "-4313-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_5",
+        "title": "Marker historyczny: Upadek Troi (~1180 BC)",
+        "date": "-4213-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_6",
+        "title": "Marker historyczny: Początek olimpiad (776 BC)",
+        "date": "-4113-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_7",
+        "title": "Marker historyczny: Założenie Rzymu (753 BC)",
+        "date": "-4013-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_8",
+        "title": "Marker historyczny: Budda (563 BC)",
+        "date": "-3913-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      },
+      {
+        "id": "historical_prehistoria_9",
+        "title": "Marker historyczny: Konfucjusz (551 BC)",
+        "date": "-3813-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki PREHISTORIA",
+        "epoch": "PREHISTORIA",
+        "epoch_period": "4713 BC - 1440 BC",
+        "julian_day_start": 0,
+        "julian_day_end": 1000000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "PREHISTORIA"
+        }
+      }
+    ]
+  }
+}

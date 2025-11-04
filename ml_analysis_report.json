@@ -1,0 +1,30 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T01:26:18.990985",
+    "total_events": 334,
+    "ml_available": true,
+    "nlp_available": false,
+    "network_available": true
+  },
+  "data_summary": {
+    "sections": {},
+    "time_range": "-6500-2023",
+    "languages": {}
+  },
+  "analyses_performed": [
+    "clustering",
+    "network_analysis"
+  ],
+  "clustering_results": {
+    "0": 295,
+    "3": 24,
+    "1": 5,
+    "4": 5,
+    "2": 5
+  },
+  "network_metrics": {
+    "nodes": 334,
+    "edges": 15131,
+    "density": 0.27208645771520024
+  }
+}

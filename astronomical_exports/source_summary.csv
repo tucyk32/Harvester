@@ -1,0 +1,5 @@
+﻿source,total_events,top_categories
+astronomical_records,60664,METEOR_SHOWER
+astropy_library,40,SOLAR_POSITION
+ephem_library,120,"SOLAR_EVENT, LUNAR_PHASE"
+historical_astronomical_records,45,COMET

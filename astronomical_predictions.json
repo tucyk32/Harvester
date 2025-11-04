@@ -1,0 +1,19 @@
+{
+  "generated_at": "2025-11-04T11:12:32.943219",
+  "model_info": {
+    "temporal_predictor": "not_available",
+    "subcategory_predictor": "trained"
+  },
+  "predictions": [],
+  "summary": {
+    "total_predictions": 0,
+    "categories_predicted": [],
+    "year_range": "N/A"
+  },
+  "insights": [
+    "Predictions based on historical astronomical patterns",
+    "Focus on solar positions and seasonal astronomical events",
+    "Predictions are probabilistic and should be verified with astronomical calculations",
+    "Model accuracy depends on quality and quantity of training data"
+  ]
+}

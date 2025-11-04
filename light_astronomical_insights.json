@@ -1,0 +1,15 @@
+{
+  "data_summary": {
+    "astronomical_events": 5000,
+    "historical_events": 1000,
+    "combined_events": 6000
+  },
+  "model_performance": {
+    "combined_classifier": "Trained successfully"
+  },
+  "recommendations": [
+    "Astronomical data successfully integrated",
+    "Combined ML model trained for astronomical vs historical classification",
+    "Ready for further astronomical analysis"
+  ]
+}

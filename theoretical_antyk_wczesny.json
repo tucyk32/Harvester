@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "generated": "2025-11-04T02:55:38.716821",
+    "total_papers": 10,
+    "sources": [
+      "theoretical_ANTYK WCZESNY"
+    ]
+  },
+  "results": {
+    "theoretical_ANTYK WCZESNY": [
+      {
+        "id": "historical_antyk wczesny_0",
+        "title": "Marker historyczny: Budowa Stonehenge (~3100 BC)",
+        "date": "-1975-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_1",
+        "title": "Marker historyczny: Dynastie egipskie (~3100 BC)",
+        "date": "-1875-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_2",
+        "title": "Marker historyczny: Wynalezienie pisma (~3200 BC)",
+        "date": "-1775-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_3",
+        "title": "Marker historyczny: Wielka Piramida (~2580 BC)",
+        "date": "-1675-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_4",
+        "title": "Marker historyczny: Kod Hammurabiego (~1750 BC)",
+        "date": "-1575-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_5",
+        "title": "Marker historyczny: Upadek Troi (~1180 BC)",
+        "date": "-1475-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_6",
+        "title": "Marker historyczny: Początek olimpiad (776 BC)",
+        "date": "-1375-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_7",
+        "title": "Marker historyczny: Założenie Rzymu (753 BC)",
+        "date": "-1275-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_8",
+        "title": "Marker historyczny: Budda (563 BC)",
+        "date": "-1175-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      },
+      {
+        "id": "historical_antyk wczesny_9",
+        "title": "Marker historyczny: Konfucjusz (551 BC)",
+        "date": "-1075-01-01",
+        "category": "HISTORY",
+        "subcategory": "HISTORICAL_MARKER",
+        "source": "theoretical_calculation",
+        "content": "Teoretyczne wydarzenie historyczne z epoki ANTYK WCZESNY",
+        "epoch": "ANTYK WCZESNY",
+        "epoch_period": "1440 BC - 72 BC",
+        "julian_day_start": 1000000,
+        "julian_day_end": 1500000,
+        "metadata": {
+          "type": "historical_marker",
+          "theoretical": true,
+          "epoch": "ANTYK WCZESNY"
+        }
+      }
+    ]
+  }
+}

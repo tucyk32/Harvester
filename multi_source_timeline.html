@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Enhanced Timeline Viewer - Historia w AM/JD</title>
+    <style>
+        :root {
+            --bg: #0a0e1a;
+            --fg: #e1e8f7;
+            --primary: #4a9eff;
+            --secondary: #7c3aed;
+            --accent: #f59e0b;
+            --card: #1a1f2e;
+            --border: #2d3748;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+        }
+
+        * { box-sizing: border-box; }
+        
+        html, body {
+            margin: 0;
+            height: 100%;
+            background: var(--bg);
+            color: var(--fg);
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--card), #243447);
+            border-bottom: 2px solid var(--border);
+            padding: 1rem 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .controls {
+            display: flex;
+            gap: 0.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--fg);
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+            transform: translateY(-1px);
+        }
+
+        .btn.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .search-box {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: var(--card);
+            color: var(--fg);
+            border-radius: 6px;
+            width: 300px;
+            font-size: 0.9rem;
+        }
+
+        .search-box:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(74, 158, 255, 0.2);
+        }
+
+        .main-container {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            height: calc(100vh - 80px);
+        }
+
+        .timeline-area {
+            position: relative;
+            overflow: hidden;
+            background: var(--card);
+            border-right: 1px solid var(--border);
+        }
+
+        .timeline-svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar {
+            background: var(--bg);
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filters-panel {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            background: var(--card);
+        }
+
+        .filter-group {
+            margin-bottom: 1rem;
+        }
+
+        .filter-group h3 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1rem;
+            color: var(--primary);
+        }
+
+        .filter-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .filter-tag {
+            padding: 0.25rem 0.75rem;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        .filter-tag:hover {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .filter-tag.active {
+            background: var(--primary);
+            border-color: var(--primary);
+        }
+
+        .color-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .events-list {
+            flex: 1;
+            padding: 1rem;
+            overflow-y: auto;
+        }
+
+        .event-item {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .event-item:hover {
+            border-color: var(--primary);
+            box-shadow: 0 4px 15px rgba(74, 158, 255, 0.1);
+            transform: translateY(-1px);
+        }
+
+        .event-title {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .event-meta {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 0.85rem;
+            color: #94a3b8;
+        }
+
+        .event-description {
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .event-detail-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.8);
+            display: none;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+        }
+
+        .modal-content {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 2rem;
+            margin: 2rem;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            color: var(--fg);
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 6px;
+        }
+
+        .modal-close:hover {
+            background: var(--border);
+        }
+
+        .stats-panel {
+            padding: 1rem;
+            background: var(--card);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .timeline-axis {
+            stroke: var(--border);
+            stroke-width: 2;
+        }
+
+        .timeline-grid {
+            stroke: var(--border);
+            stroke-width: 1;
+            opacity: 0.3;
+        }
+
+        .timeline-label {
+            fill: #94a3b8;
+            font-size: 12px;
+            font-family: monospace;
+        }
+
+        .event-dot {
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .event-dot:hover {
+            stroke: var(--primary);
+            stroke-width: 2;
+            r: 6;
+        }
+
+        @media (max-width: 1200px) {
+            .main-container {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 400px;
+            }
+            
+            .sidebar {
+                border-right: none;
+                border-top: 1px solid var(--border);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">🕰️ Enhanced Timeline</div>
+        <div class="controls">
+            <button class="btn" id="zoomIn">🔍+</button>
+            <button class="btn" id="zoomOut">🔍−</button>
+            <button class="btn" id="reset">⏎ Reset</button>
+            <input type="text" class="search-box" id="searchBox" placeholder="Szukaj wydarzeń...">
+            <select class="btn" id="yearRange">
+                <option value="all">Wszystkie lata</option>
+                <option value="ancient">Starożytność (do 500)</option>
+                <option value="medieval">Średniowiecze (500-1500)</option>
+                <option value="renaissance">Renesans (1400-1600)</option>
+                <option value="modern">Nowożytność (1500-1800)</option>
+                <option value="contemporary">Współczesność (1800+)</option>
+            </select>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <div class="timeline-area">
+            <svg class="timeline-svg" id="timelineSvg"></svg>
+        </div>
+        
+        <div class="sidebar">
+            <div class="stats-panel">
+                <h3>📊 Statystyki</h3>
+                <div id="statsContent"></div>
+            </div>
+            
+            <div class="filters-panel">
+                <div class="filter-group">
+                    <h3>🏷️ Kategorie</h3>
+                    <div class="filter-tags" id="categoryFilters"></div>
+                </div>
+                
+                <div class="filter-group">
+                    <h3>📚 Źródła</h3>
+                    <div class="filter-tags" id="sourceFilters"></div>
+                </div>
+            </div>
+            
+            <div class="events-list" id="eventsList"></div>
+        </div>
+    </div>
+
+    <div class="event-detail-modal" id="eventModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal()">✕</button>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <script>
+        // Dane wydarzenia wstrzyknięte z serwera
+        const DATA = {"metadata": {"generated": "2025-11-04T00:56:59.163774", "test_mode": true, "sources": ["Wikidata", "Historical Astronomy"], "am_epoch": 1738164.0}, "statistics": {"total": 25, "sources": {"Wikidata": 20, "Astronomy": 5}, "categories": {"ASTRONOMICAL": 5, "POLITICAL": 20}}, "events": [{"title": "Total Solar Eclipse over Europe", "start_jd": 2199565.5, "am_day": 461401.5, "category": "ASTRONOMICAL", "subcategory": "total", "description": "Total solar eclipse visible over central Europe", "location": "Sky", "source": "Historical Astronomy", "source_url": "https://eclipse.gsfc.nasa.gov/", "year": 1310, "month": 1, "day": 31, "reliability": 5}, {"title": "Wojna czterech władców", "start_jd": 2204648.5, "am_day": 466484.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna czterech władców in Metzgau", "location": "Metzgau", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q320755", "year": 1324, "month": 1, "day": 1, "reliability": 4}, {"title": "War of Saint-Sardos", "start_jd": 2204838.5, "am_day": 466674.5, "category": "POLITICAL", "subcategory": "war", "description": "War: War of Saint-Sardos in Księstwo Akwitanii", "location": "Księstwo Akwitanii", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q676068", "year": 1324, "month": 7, "day": 9, "reliability": 4}, {"title": "Wojna polsko-krzyżacka 1327-1332", "start_jd": 2205744.5, "am_day": 467580.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna polsko-krzyżacka 1327-1332", "location": "", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q583223", "year": 1327, "month": 1, "day": 1, "reliability": 4}, {"title": "Wojna stuletnia", "start_jd": 2209548.5, "am_day": 471384.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna stuletnia in Francja", "location": "Francja", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q12551", "year": 1337, "month": 6, "day": 1, "reliability": 4}, {"title": "Wojna stuletnia", "start_jd": 2209548.5, "am_day": 471384.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna stuletnia in Francja", "location": "Francja", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q12551", "year": 1337, "month": 6, "day": 1, "reliability": 4}, {"title": "Wojna stuletnia", "start_jd": 2209548.5, "am_day": 471384.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna stuletnia in Francja", "location": "Francja", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q12551", "year": 1337, "month": 6, "day": 1, "reliability": 4}, {"title": "Great Comet appearance", "start_jd": 2209684.5, "am_day": 471520.5, "category": "ASTRONOMICAL", "subcategory": "great", "description": "Bright comet visible to naked eye for several months", "location": "Sky", "source": "Historical Astronomy", "source_url": "https://eclipse.gsfc.nasa.gov/", "year": 1337, "month": 10, "day": 15, "reliability": 5}, {"title": "Wojna o sukcesję w Bretanii", "start_jd": 2210858.5, "am_day": 472694.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna o sukcesję w Bretanii in Bretania", "location": "Bretania", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q550172", "year": 1341, "month": 1, "day": 1, "reliability": 4}, {"title": "Bitwa morska w Zatoce Smyrneńskiej", "start_jd": 2211588.5, "am_day": 473424.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Bitwa morska w Zatoce Smyrneńskiej in Izmir", "location": "Izmir", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q638850", "year": 1343, "month": 1, "day": 1, "reliability": 4}, {"title": "Lunar Eclipse", "start_jd": 2212625.5, "am_day": 474461.5, "category": "ASTRONOMICAL", "subcategory": "lunar", "description": "Total lunar eclipse visible from Europe and Asia", "location": "Sky", "source": "Historical Astronomy", "source_url": "https://eclipse.gsfc.nasa.gov/", "year": 1345, "month": 11, "day": 3, "reliability": 5}, {"title": "Wojna bizantyńsko-genueńska (1348-1349)", "start_jd": 2213414.5, "am_day": 475250.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna bizantyńsko-genueńska (1348-1349) in Morze Egejskie", "location": "Morze Egejskie", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q327513", "year": 1348, "month": 1, "day": 1, "reliability": 4}, {"title": "Bosphorus War", "start_jd": 2213780.5, "am_day": 475616.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Bosphorus War", "location": "", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q894486", "year": 1349, "month": 1, "day": 1, "reliability": 4}, {"title": "Wojna duńsko-hanzeatycka", "start_jd": 2218373.5, "am_day": 480209.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna duńsko-hanzeatycka in Morze Bałtyckie", "location": "Morze Bałtyckie", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q317210", "year": 1361, "month": 7, "day": 30, "reliability": 4}, {"title": "Wojna duńsko-hanzeatycka", "start_jd": 2218373.5, "am_day": 480209.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna duńsko-hanzeatycka in Skandynawia", "location": "Skandynawia", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q317210", "year": 1361, "month": 7, "day": 30, "reliability": 4}, {"title": "Wojna duńsko-hanzeatycka", "start_jd": 2218373.5, "am_day": 480209.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna duńsko-hanzeatycka in Northern Germany", "location": "Northern Germany", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q317210", "year": 1361, "month": 7, "day": 30, "reliability": 4}, {"title": "Wojna duńsko-hanzeatycka (1367-1370)", "start_jd": 2218375.5, "am_day": 480211.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Wojna duńsko-hanzeatycka (1367-1370)", "location": "", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q233538", "year": 1361, "month": 8, "day": 1, "reliability": 4}, {"title": "Hungarian–Ottoman War", "start_jd": 2219989.5, "am_day": 481825.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Hungarian–Ottoman War in Półwysep Bałkański", "location": "Półwysep Bałkański", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q1163209", "year": 1366, "month": 1, "day": 1, "reliability": 4}, {"title": "Hungarian–Ottoman War", "start_jd": 2219989.5, "am_day": 481825.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Hungarian–Ottoman War in Królestwo Węgier", "location": "Królestwo Węgier", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q1163209", "year": 1366, "month": 1, "day": 1, "reliability": 4}, {"title": "Meteor shower peak", "start_jd": 2220212.5, "am_day": 482048.5, "category": "ASTRONOMICAL", "subcategory": "meteor", "description": "Perseid meteor shower with exceptional activity", "location": "Sky", "source": "Historical Astronomy", "source_url": "https://eclipse.gsfc.nasa.gov/", "year": 1366, "month": 8, "day": 12, "reliability": 5}, {"title": "Albanian-Epirote War of 1367-1370", "start_jd": 2220354.5, "am_day": 482190.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Albanian-Epirote War of 1367-1370 in Janina", "location": "Janina", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q119702612", "year": 1367, "month": 1, "day": 1, "reliability": 4}, {"title": "Albanian-Epirote War of 1374-1375", "start_jd": 2222911.5, "am_day": 484747.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Albanian-Epirote War of 1374-1375 in Epir", "location": "Epir", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q119873109", "year": 1374, "month": 1, "day": 1, "reliability": 4}, {"title": "War of Chioggia", "start_jd": 2224372.5, "am_day": 486208.5, "category": "POLITICAL", "subcategory": "war", "description": "War: War of Chioggia in Morze Śródziemne", "location": "Morze Śródziemne", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q1074467", "year": 1378, "month": 1, "day": 1, "reliability": 4}, {"title": "Ava–Hanthawaddy War", "start_jd": 2227263.5, "am_day": 489099.5, "category": "POLITICAL", "subcategory": "war", "description": "War: Ava–Hanthawaddy War in Dolna Birma", "location": "Dolna Birma", "source": "Wikidata", "source_url": "http://www.wikidata.org/entity/Q119717152", "year": 1385, "month": 12, "day": 1, "reliability": 4}, {"title": "Venus transit simulation", "start_jd": 2228196.5, "am_day": 490032.5, "category": "ASTRONOMICAL", "subcategory": "venus", "description": "Venus at greatest eastern elongation", "location": "Sky", "source": "Historical Astronomy", "source_url": "https://eclipse.gsfc.nasa.gov/", "year": 1388, "month": 6, "day": 21, "reliability": 5}]};
+        
+        // Kolory kategorii
+        const CATEGORY_COLORS = {
+            'HISTORICAL': '#4a9eff',
+            'BIOGRAPHICAL': '#10b981', 
+            'CULTURAL': '#f59e0b',
+            'ASTRONOMICAL': '#7c3aed',
+            'POLITICAL': '#ef4444',
+            'SCIENTIFIC': '#06d6a0',
+            'ECONOMIC': '#8b5cf6',
+            'NATURAL': '#f97316',
+            'OTHER': '#6b7280'
+        };
+
+        // Stan aplikacji
+        let appState = {
+            scale: 0.001,
+            originJD: 1700000,
+            activeFilters: {
+                categories: new Set(Object.keys(CATEGORY_COLORS)),
+                sources: new Set()
+            },
+            searchQuery: '',
+            yearRange: 'all',
+            dragging: false,
+            dragStart: 0,
+            originStart: 0
+        };
+
+        // Elementy DOM
+        const svg = document.getElementById('timelineSvg');
+        const eventsList = document.getElementById('eventsList');
+        const searchBox = document.getElementById('searchBox');
+        const yearRangeSelect = document.getElementById('yearRange');
+        const statsContent = document.getElementById('statsContent');
+        const categoryFilters = document.getElementById('categoryFilters');
+        const sourceFilters = document.getElementById('sourceFilters');
+        const eventModal = document.getElementById('eventModal');
+        const modalContent = document.getElementById('modalContent');
+
+        // Inicjalizacja
+        function init() {
+            setupFilters();
+            setupEventListeners();
+            updateStats();
+            render();
+        }
+
+        function setupFilters() {
+            // Kategorie
+            Object.keys(CATEGORY_COLORS).forEach(category => {
+                const tag = createFilterTag(category, CATEGORY_COLORS[category], true);
+                tag.addEventListener('click', () => toggleCategoryFilter(category));
+                categoryFilters.appendChild(tag);
+            });
+
+            // Źródła
+            const sources = [...new Set(DATA.events.map(e => e.source))];
+            appState.activeFilters.sources = new Set(sources);
+            
+            sources.forEach(source => {
+                const tag = createFilterTag(source, '#6b7280', true);
+                tag.addEventListener('click', () => toggleSourceFilter(source));
+                sourceFilters.appendChild(tag);
+            });
+        }
+
+        function createFilterTag(text, color, active = false) {
+            const tag = document.createElement('div');
+            tag.className = `filter-tag ${active ? 'active' : ''}`;
+            tag.innerHTML = `
+                <div class="color-dot" style="background-color: ${color}"></div>
+                ${text}
+            `;
+            return tag;
+        }
+
+        function toggleCategoryFilter(category) {
+            const filters = appState.activeFilters.categories;
+            if (filters.has(category)) {
+                filters.delete(category);
+            } else {
+                filters.add(category);
+            }
+            updateFilterUI();
+            render();
+        }
+
+        function toggleSourceFilter(source) {
+            const filters = appState.activeFilters.sources;
+            if (filters.has(source)) {
+                filters.delete(source);
+            } else {
+                filters.add(source);
+            }
+            updateFilterUI();
+            render();
+        }
+
+        function updateFilterUI() {
+            // Update category filters
+            categoryFilters.querySelectorAll('.filter-tag').forEach((tag, index) => {
+                const category = Object.keys(CATEGORY_COLORS)[index];
+                tag.classList.toggle('active', appState.activeFilters.categories.has(category));
+            });
+
+            // Update source filters
+            sourceFilters.querySelectorAll('.filter-tag').forEach((tag, index) => {
+                const sources = [...new Set(DATA.events.map(e => e.source))];
+                const source = sources[index];
+                tag.classList.toggle('active', appState.activeFilters.sources.has(source));
+            });
+        }
+
+        function setupEventListeners() {
+            // Search
+            searchBox.addEventListener('input', (e) => {
+                appState.searchQuery = e.target.value.toLowerCase();
+                render();
+            });
+
+            // Year range
+            yearRangeSelect.addEventListener('change', (e) => {
+                appState.yearRange = e.target.value;
+                setYearRange(e.target.value);
+                render();
+            });
+
+            // Zoom controls
+            document.getElementById('zoomIn').addEventListener('click', () => {
+                appState.scale *= 1.5;
+                render();
+            });
+
+            document.getElementById('zoomOut').addEventListener('click', () => {
+                appState.scale /= 1.5;
+                render();
+            });
+
+            document.getElementById('reset').addEventListener('click', () => {
+                appState.scale = 0.001;
+                appState.originJD = 1700000;
+                render();
+            });
+
+            // Mouse interactions
+            svg.addEventListener('mousedown', startDrag);
+            window.addEventListener('mousemove', drag);
+            window.addEventListener('mouseup', endDrag);
+            svg.addEventListener('wheel', zoom, { passive: false });
+
+            // Modal close
+            eventModal.addEventListener('click', (e) => {
+                if (e.target === eventModal) closeModal();
+            });
+        }
+
+        function setYearRange(range) {
+            const ranges = {
+                'ancient': [0, 500],
+                'medieval': [500, 1500], 
+                'renaissance': [1400, 1600],
+                'modern': [1500, 1800],
+                'contemporary': [1800, 2100],
+                'all': null
+            };
+
+            if (ranges[range]) {
+                const [startYear, endYear] = ranges[range];
+                const startJD = yearToJD(startYear);
+                const endJD = yearToJD(endYear);
+                appState.originJD = startJD;
+                appState.scale = svg.clientWidth / (endJD - startJD);
+            }
+        }
+
+        function yearToJD(year) {
+            // Aproximacja konwersji rok -> JD
+            return 1721425.5 + (year - 1) * 365.25;
+        }
+
+        function startDrag(e) {
+            appState.dragging = true;
+            appState.dragStart = e.clientX;
+            appState.originStart = appState.originJD;
+        }
+
+        function drag(e) {
+            if (!appState.dragging) return;
+            const dx = e.clientX - appState.dragStart;
+            appState.originJD = appState.originStart - dx / appState.scale;
+            render();
+        }
+
+        function endDrag() {
+            appState.dragging = false;
+        }
+
+        function zoom(e) {
+            e.preventDefault();
+            const rect = svg.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const jdAtCursor = appState.originJD + x / appState.scale;
+            
+            const factor = e.deltaY < 0 ? 1.25 : 0.8;
+            appState.scale *= factor;
+            appState.originJD = jdAtCursor - x / appState.scale;
+            
+            render();
+        }
+
+        function filterEvents() {
+            return DATA.events.filter(event => {
+                // Category filter
+                if (!appState.activeFilters.categories.has(event.category)) return false;
+                
+                // Source filter
+                if (!appState.activeFilters.sources.has(event.source)) return false;
+                
+                // Search filter
+                if (appState.searchQuery) {
+                    const searchText = (event.title + ' ' + event.description).toLowerCase();
+                    if (!searchText.includes(appState.searchQuery)) return false;
+                }
+                
+                return true;
+            });
+        }
+
+        function render() {
+            const width = svg.clientWidth || 1200;
+            const height = svg.clientHeight || 600;
+            
+            svg.setAttribute('width', width);
+            svg.setAttribute('height', height);
+            svg.innerHTML = '';
+
+            const axisY = height * 0.7;
+            
+            // Draw axis
+            const axis = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+            axis.setAttribute('x1', 0);
+            axis.setAttribute('y1', axisY);
+            axis.setAttribute('x2', width);
+            axis.setAttribute('y2', axisY);
+            axis.setAttribute('class', 'timeline-axis');
+            svg.appendChild(axis);
+
+            // Draw grid and labels
+            const jdRange = width / appState.scale;
+            const step = Math.pow(10, Math.floor(Math.log10(jdRange / 10)));
+            const startJD = Math.floor(appState.originJD / step) * step;
+            
+            for (let jd = startJD; jd < appState.originJD + jdRange; jd += step) {
+                const x = (jd - appState.originJD) * appState.scale;
+                if (x >= 0 && x <= width) {
+                    // Grid line
+                    const gridLine = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    gridLine.setAttribute('x1', x);
+                    gridLine.setAttribute('y1', 0);
+                    gridLine.setAttribute('x2', x);
+                    gridLine.setAttribute('y2', height);
+                    gridLine.setAttribute('class', 'timeline-grid');
+                    svg.appendChild(gridLine);
+                    
+                    // Label
+                    const label = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                    label.setAttribute('x', x + 5);
+                    label.setAttribute('y', axisY + 20);
+                    label.setAttribute('class', 'timeline-label');
+                    label.textContent = `JD ${Math.round(jd)}`;
+                    svg.appendChild(label);
+                }
+            }
+
+            // Draw events
+            const filteredEvents = filterEvents();
+            const visibleEvents = [];
+            
+            filteredEvents.forEach((event, index) => {
+                const x = (event.start_jd - appState.originJD) * appState.scale;
+                if (x >= -20 && x <= width + 20) {
+                    visibleEvents.push(event);
+                    
+                    const y = axisY - 20 - (index % 10) * 25;
+                    const color = CATEGORY_COLORS[event.category] || CATEGORY_COLORS.OTHER;
+                    
+                    // Event dot
+                    const dot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    dot.setAttribute('cx', x);
+                    dot.setAttribute('cy', y);
+                    dot.setAttribute('r', 4);
+                    dot.setAttribute('fill', color);
+                    dot.setAttribute('class', 'event-dot');
+                    dot.addEventListener('click', () => showEventDetail(event));
+                    svg.appendChild(dot);
+                    
+                    // Event title (if space allows)
+                    if (appState.scale > 0.01) {
+                        const title = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+                        title.setAttribute('x', x + 8);
+                        title.setAttribute('y', y + 4);
+                        title.setAttribute('class', 'timeline-label');
+                        title.setAttribute('fill', color);
+                        title.style.fontSize = '11px';
+                        title.textContent = event.title.substring(0, 30) + (event.title.length > 30 ? '...' : '');
+                        title.addEventListener('click', () => showEventDetail(event));
+                        svg.appendChild(title);
+                    }
+                }
+            });
+
+            // Update events list
+            updateEventsList(visibleEvents.slice(0, 50)); // Limit to 50 for performance
+            updateStats();
+        }
+
+        function updateEventsList(events) {
+            eventsList.innerHTML = '';
+            
+            events.forEach(event => {
+                const item = document.createElement('div');
+                item.className = 'event-item';
+                item.innerHTML = `
+                    <div class="event-title">${event.title}</div>
+                    <div class="event-meta">
+                        <span>📅 JD ${event.start_jd}</span>
+                        <span>🏷️ ${event.category}</span>
+                        <span>📚 ${event.source}</span>
+                    </div>
+                    <div class="event-description">${event.description.substring(0, 150)}${event.description.length > 150 ? '...' : ''}</div>
+                `;
+                item.addEventListener('click', () => showEventDetail(event));
+                eventsList.appendChild(item);
+            });
+        }
+
+        function updateStats() {
+            const filtered = filterEvents();
+            const total = DATA.events.length;
+            
+            const categoryStats = {};
+            filtered.forEach(event => {
+                categoryStats[event.category] = (categoryStats[event.category] || 0) + 1;
+            });
+
+            statsContent.innerHTML = `
+                <div class="stat-item">
+                    <span>Wszystkich wydarzeń:</span>
+                    <span><strong>${total.toLocaleString()}</strong></span>
+                </div>
+                <div class="stat-item">
+                    <span>Wyświetlanych:</span>
+                    <span><strong>${filtered.length.toLocaleString()}</strong></span>
+                </div>
+                <div class="stat-item">
+                    <span>Zakres JD:</span>
+                    <span><strong>${Math.round(appState.originJD)} - ${Math.round(appState.originJD + svg.clientWidth / appState.scale)}</strong></span>
+                </div>
+                <hr style="margin: 0.5rem 0; border: 1px solid var(--border);">
+                ${Object.entries(categoryStats).map(([cat, count]) => 
+                    `<div class="stat-item">
+                        <span>${cat}:</span>
+                        <span><strong>${count}</strong></span>
+                    </div>`
+                ).join('')}
+            `;
+        }
+
+        function showEventDetail(event) {
+            modalContent.innerHTML = `
+                <h2 style="margin-top: 0; color: var(--primary);">${event.title}</h2>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 1.5rem;">
+                    <div><strong>📅 Julian Day:</strong> ${event.start_jd}</div>
+                    <div><strong>🌍 AM Day:</strong> ${event.am_day}</div>
+                    <div><strong>🏷️ Kategoria:</strong> ${event.category}</div>
+                    <div><strong>📂 Podkategoria:</strong> ${event.subcategory || 'N/A'}</div>
+                    <div><strong>📚 Źródło:</strong> ${event.source}</div>
+                    <div><strong>⭐ Wiarygodność:</strong> ${event.reliability}/5</div>
+                    ${event.location ? `<div><strong>📍 Lokalizacja:</strong> ${event.location}</div>` : ''}
+                    ${event.year ? `<div><strong>📆 Data:</strong> ${event.year}-${event.month || '?'}-${event.day || '?'}</div>` : ''}
+                </div>
+                
+                <div style="margin-bottom: 1.5rem;">
+                    <h3 style="color: var(--primary);">📝 Opis</h3>
+                    <p style="line-height: 1.6;">${event.description}</p>
+                </div>
+                
+                ${event.source_url ? `
+                    <div>
+                        <h3 style="color: var(--primary);">🔗 Źródła</h3>
+                        <a href="${event.source_url}" target="_blank" style="color: var(--primary); text-decoration: none;">
+                            ${event.source_url}
+                        </a>
+                    </div>
+                ` : ''}
+            `;
+            eventModal.style.display = 'flex';
+        }
+
+        function closeModal() {
+            eventModal.style.display = 'none';
+        }
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            setTimeout(render, 100);
+        });
+
+        // Start the application
+        init();
+    </script>
+</body>
+</html>

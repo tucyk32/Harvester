@@ -1,0 +1,51 @@
+# Requirements for Historical ML Analyzer
+# Podstawowe biblioteki (już mamy)
+requests
+beautifulsoup4
+pandas
+pyarrow
+python-dateutil
+tqdm
+
+# Machine Learning
+scikit-learn>=1.3.0
+numpy>=1.21.0
+
+# Natural Language Processing
+spacy>=3.4.0
+# Modele językowe (instalacja: python -m spacy download pl_core_news_sm)
+
+# Network Analysis
+networkx>=2.8.0
+
+# Advanced ML (opcjonalne)
+tensorflow>=2.10.0  # Deep learning
+torch>=1.12.0       # PyTorch
+transformers>=4.20.0 # Hugging Face transformers
+
+# Data Visualization
+matplotlib>=3.5.0
+seaborn>=0.11.0
+plotly>=5.10.0
+
+# Text Processing
+textblob>=0.17.0
+nltk>=3.7.0
+
+# Scientific Computing
+scipy>=1.9.0
+
+# Time Series Analysis
+statsmodels>=0.13.0
+
+# Web scraping (dla archiwów)
+selenium>=4.0.0
+scrapy>=2.6.0
+
+# Database
+sqlalchemy>=1.4.0
+psycopg2-binary>=2.9.0  # PostgreSQL
+
+# API integrations
+arxiv>=1.4.0
+biopython>=1.79  # PubMed integration
